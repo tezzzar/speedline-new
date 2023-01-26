@@ -1,0 +1,966 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#03727e">
+  <title>DETA &mdash; Кредит</title>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+  <link href="http://195.226.192.57:4444/basket/css/validator.css" rel="stylesheet" type="text/css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210393537-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-210393537-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M6QNL4B');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QNL4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="wrapper">
+
+    <!--HEADER-->
+    <header class="site-header">
+      <!--***-->
+      <div class="logo"><a href="/"><img src="../img/logo.jpg" alt=""></a></div>
+      <!--***-->
+      <h1 class="page-title">Оформлення замовлення</h1>
+      <!--***-->
+    </header>
+
+    <div class="site-content white">
+      <div class="content">
+        <style>
+          .input_error a {
+            color: #d93d3d;
+            border-color: #d93d3d;
+          }
+
+          img[src=null] {
+            display: none;
+          }
+        </style>
+        <form action="http://195.226.192.57:4444/basket/order/send?sessionId=8bf19f2fdc5d480b4a6a3d88b720fd0a"
+          method="POST">
+          <!--order-->
+          <div class="order">
+            <div class="order-cart">
+              <div class="order-cart__header">
+                <span class="order-cart__title">Ваш заказ</span>
+              </div>
+              <div class="order-cart__content">
+                <table class="order-table">
+                  <tr>
+                    <th class="order-th__item" colspan="2">Товар</th>
+                    <th class="order-th__price">Цена</th>
+                    <th class="order-th__quantity">Кол-во.</th>
+                    <th class="order-th__sum">Стоимость</th>
+                    <th class="order-th__stock">Наличие</th>
+                    <th class="order-th__remove"></th>
+                  </tr>
+                  <!--  tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-2.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">Bridgestone Alenza 001 185/60 R14 82R</a>
+								<span class="cart-table__note">Артикул 28555</span>
+							</td>
+						 	<td class="order-td__price">1 420 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1">
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_yes">Есть</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-1.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">NOKIAN NORDMAN RS2 185/60 R14 82R</a>
+								<span class="cart-table__note">Артикул 24789</span>
+							</td>
+							<td class="order-td__price">1 420 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1">
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_few">2 шт.</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-3.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">Автоакустика Morel Tempo Ultra 602</a>
+								<span class="cart-table__note">Артикул 21627</span>
+							</td>
+							<td class="order-td__price">355 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1">
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_no">Нет</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr -->
+                  <tr>
+                    <td class="order-td__photo">
+                      <a href="http://akb911.in.ua" target="_blank">
+                        <img src="null" style="width: 150px">
+                      </a>
+                    </td>
+                    <td class="order-td__name">
+                      <a href="http://akb911.in.ua" target="_blank">Аккумулятор Bosch S4 44Ah 420A R+ 0092S40001</a>
+                      <span class="cart-table__note">Артикул 0092S40001</span>
+                    </td>
+                    <td class="order-td__price"><b class="price-0092S40001">57</b> <span class="unit">грн.</span></td>
+                    <td class="order-td_quantity">
+                      <div class="quantity-form math">
+                        <a href="http://195.226.192.57:4444/basket/order/33853/product/0092S40001/dec"
+                          class="quantity-form__minus" data-operation="dec" data-id="0092S40001">-</a>
+                        <input class="quantity-form__input" name="order_products[0092S40001]" type="text" value="3" />
+                        <a href="http://195.226.192.57:4444/basket/order/33853/product/0092S40001/inc"
+                          data-id="0092S40001" class="quantity-form__plus">+</a>
+                        <span class="unit">шт.</span>
+                      </div>
+                    </td>
+                    <td class="order-td__sum">
+                      <b class="sum-0092S40001">171</b> <span class="unit">грн.</span>
+                    </td>
+                    <td class="order-td__stock">
+                      <span class="stock_yes">Есть</span>
+                    </td>
+                    <td class="order-td__remove">
+                      <a href="http://195.226.192.57:4444/basket/order/33853/delete/0092S40001?sessionId=8bf19f2fdc5d480b4a6a3d88b720fd0a"
+                        class="remove-button"></a>
+                    </td>
+                  </tr>
+                  <!-- tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-1.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">NOKIAN NORDMAN RS2 185/60 R14 82R</a>
+								<span class="cart-table__note">Артикул 24789</span>
+							</td>
+							<td class="order-td__price">1 420 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1" />
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_few">2 шт.</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-3.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">Автоакустика Morel Tempo Ultra 602</a>
+								<span class="cart-table__note">Артикул 21627</span>
+							</td>
+							<td class="order-td__price">355 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1" />
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_no">Нет</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr-->
+                  <tr id="commissions" style="display: none;">
+                    <td class="order-td__name" colspan="4">
+                      <a href="#">Коммиссионные</a>
+                    </td>
+                    <td class="order-td__sum" colspan="3"><span id="commissions-value">4.27</span> <span
+                        class="unit">грн.</span></td>
+                  </tr>
+                  <tr>
+                    <td class="order-td__total-name" colspan="4">Итоговая стоимость</td>
+                    <td class="order-td__total-sum" colspan="3">
+                      <div><span class="total-sum" id="total-sum">171</span><span class="total-sum"
+                          id="total-sum-commissions" style="display: none;">175.27</span> <span class="unit">грн.</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <!-- <div class="order-buttons">
+                  <input type="checkbox" class="form__checkbox" id="check_conditions_1">
+                  <label for="check_conditions_1" class="checkbox__label">Цим я даю <a href="#modal-confirm">Згоду</a>
+                    на збір, обробку та передачу моїх персональних даних</label>
+                </div>
+                <div class="order-buttons">
+                  <input type="submit" style="opacity: 0.7" class="button button_confirm" value="Оформить заказ">
+                  <a href="http://akb911.in.ua" class="button continue">Продолжить покупки</a>
+                </div> -->
+                <input type="hidden" name="total_price" value="171">
+              </div>
+            </div>
+            <!--order steps-->
+            <div class="order-steps">
+              <!--order step 1-->
+              <div class="order-step">
+                <div class="order-step__header">
+                  <span class="order-step__number">1</span>
+                  <span class="order-step__title">Личная информация</span>
+                </div>
+                <div class="order-step__content">
+                  <div class="tabs tabs_authorization">
+                    <!-- ul class="tabs__list">
+								<li class="tab-item"><a href="#tab-1">Я новый покупатель</a></li>
+								<li class="tab-item"><a href="#tab-2">Я постоянный клиент</a></li>
+							</ul -->
+                    <div class="tab-content" id="tab-1">
+                      <div class="form form_small">
+                        <div class="form__row">
+                          <input type="text" class="form__input" name="user[name]" placeholder="Имя и фамилия">
+                        </div>
+                        <div class="form__row">
+                          <input type="text" class="form__input" name="user[city]" placeholder="Город">
+                        </div>
+                        <div class="form__row">
+                          <input type="text" class="form__input" name="user[phone]" placeholder="Мобильный телефон">
+                          <!--span class="form__note">На этот номер будут приходить sms с номером декларации</span-->
+                        </div>
+                        <div class="form__row">
+                          <input type="text" class="form__input" name="user[email]" placeholder="Email">
+                          <!--span class="form__note">Если вы хотите следить за статусом выполнения заказа</span-->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- div class="tab-content" id="tab-2">
+								<div class="authorization__form form_small">
+									<div class="form__row">   
+										<input type="text" class="form__input" placeholder="Мобильный телефон или Email">
+									</div>
+									<div class="form__row"> 
+										<input type="password" class="form__input" placeholder="Пароль">
+									</div>
+									<div class="form__buttons">
+										<a href="#" class="forget-link">Забыли пароль?</a>
+									</div>
+								</div>
+							</div -->
+                  </div>
+                </div>
+              </div>
+              <!--/order step 1-->
+              <!--order step 2-->
+              <div class="order-step">
+                <div class="order-step__header">
+                  <span class="order-step__number">2</span>
+                  <span class="order-step__title">Способ оплаты</span>
+                </div>
+                <div class="order-step__content">
+                  <div class="form form_small">
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_1" name="radio_pay" value="cash" />
+                      <label for="radio_pay_1" class="radio__label">Наличными</label>
+                    </div>
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_2" name="radio_pay" value="bank" />
+                      <label for="radio_pay_2" class="radio__label">Оплата картой</label>
+                    </div>
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_3" name="radio_pay" value="credit" />
+                      <label for="radio_pay_3" class="radio__label">Кредит</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/order step 2-->
+              <!--order step 3-->
+              <div class="order-step">
+                <div class="order-step__header">
+                  <span class="order-step__number">3</span>
+                  <span class="order-step__title">Способ доставки</span>
+                </div>
+                <div class="order-step__content">
+                  <div class="order-step__content">
+                    <div class="form form_small">
+                      <div class="form__row">
+                        <input type="radio" class="form__radio radio_delivery" id="radio_delivery_1"
+                          name="radio_delivery" value="pickup">
+                        <label for="radio_delivery_1" class="radio__label">Самовывоз</label>
+                        <div class="sub-form-pickup sub-form hidden">
+                          <select class="form__select" id="ui-id-1" name="value_delivery[pickup]"
+                            style="display: none;">
+                            <option disabled selected>Выбирете магазин</option>
+                            <option>Київ, вул. Ушинського 16 (Автозапчастини)</option>
+                            <option>Київ, вул. Лебединська 12 (ШИНИ)</option>
+                            <option>Київ, вул. Новопирогівська 56 (ШИНИ)</option>
+                            <option>Київ, вул. Стеценко 30 (ШИНИ)</option>
+                            <option>Київ, Павла Усенко 7/9 (ШИНИ)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form__row">
+                        <input type="radio" class="form__radio radio_delivery" id="radio_delivery_2"
+                          name="radio_delivery" value="nova">
+                        <label for="radio_delivery_2" class="radio__label">Отд.новой почты</label>
+                        <div class="sub-form-nova sub-form hidden">
+                          <input type="text" class="form__input" name="city_nova" placeholder="Адрес">
+                          <div><br></div>
+                          <select class="form__select" id="ui-id-3" name="value_delivery[nova]" style="display: none;">
+                            <option disabled selected>Выбирете отделение</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/order step 3-->
+            </div>
+            <!--/order steps-->
+            <!--order cart-->
+            <div class="order-cart">
+              <div class="order-cart__header" style="display: none;">
+                <span class="order-cart__title">Ваш заказ</span>
+              </div>
+              <div class="order-cart__content">
+                <table class="order-table" style="display: none;">
+                  <tr>
+                    <th class="order-th__item" colspan="2">Товар</th>
+                    <th class="order-th__price">Цена</th>
+                    <th class="order-th__quantity">Кол-во.</th>
+                    <th class="order-th__sum">Стоимость</th>
+                    <th class="order-th__stock">Наличие</th>
+                    <th class="order-th__remove"></th>
+                  </tr>
+                  <!--  tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-2.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">Bridgestone Alenza 001 185/60 R14 82R</a>
+								<span class="cart-table__note">Артикул 28555</span>
+							</td>
+						 	<td class="order-td__price">1 420 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1">
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_yes">Есть</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-1.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">NOKIAN NORDMAN RS2 185/60 R14 82R</a>
+								<span class="cart-table__note">Артикул 24789</span>
+							</td>
+							<td class="order-td__price">1 420 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1">
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_few">2 шт.</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-3.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">Автоакустика Morel Tempo Ultra 602</a>
+								<span class="cart-table__note">Артикул 21627</span>
+							</td>
+							<td class="order-td__price">355 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1">
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_no">Нет</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr -->
+                  <tr>
+                    <td class="order-td__photo">
+                      <a href="http://akb911.in.ua" target="_blank">
+                        <img src="null" style="width: 150px">
+                      </a>
+                    </td>
+                    <td class="order-td__name">
+                      <a href="http://akb911.in.ua" target="_blank">Аккумулятор Bosch S4 44Ah 420A R+ 0092S40001</a>
+                      <span class="cart-table__note">Артикул 0092S40001</span>
+                    </td>
+                    <td class="order-td__price"><b class="price-0092S40001">57</b> <span class="unit">грн.</span></td>
+                    <td class="order-td_quantity">
+                      <div class="quantity-form math">
+                        <a href="http://195.226.192.57:4444/basket/order/33853/product/0092S40001/dec"
+                          class="quantity-form__minus" data-operation="dec" data-id="0092S40001">-</a>
+                        <input class="quantity-form__input" name="order_products[0092S40001]" type="text" value="3" />
+                        <a href="http://195.226.192.57:4444/basket/order/33853/product/0092S40001/inc"
+                          data-id="0092S40001" class="quantity-form__plus">+</a>
+                        <span class="unit">шт.</span>
+                      </div>
+                    </td>
+                    <td class="order-td__sum">
+                      <b class="sum-0092S40001">171</b> <span class="unit">грн.</span>
+                    </td>
+                    <td class="order-td__stock">
+                      <span class="stock_yes">Есть</span>
+                    </td>
+                    <td class="order-td__remove">
+                      <a href="http://195.226.192.57:4444/basket/order/33853/delete/0092S40001?sessionId=8bf19f2fdc5d480b4a6a3d88b720fd0a"
+                        class="remove-button"></a>
+                    </td>
+                  </tr>
+                  <!-- tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-1.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">NOKIAN NORDMAN RS2 185/60 R14 82R</a>
+								<span class="cart-table__note">Артикул 24789</span>
+							</td>
+							<td class="order-td__price">1 420 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1" />
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_few">2 шт.</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="order-td__photo">
+								<a href="#"><img src="_tmp/cart-item-3.jpg" alt=""></a>
+							</td>
+							<td class="order-td__name">
+								<a href="#">Автоакустика Morel Tempo Ultra 602</a>
+								<span class="cart-table__note">Артикул 21627</span>
+							</td>
+							<td class="order-td__price">355 <span class="unit">грн.</span></td>
+                            <td class="order-td_quantity">
+                                <div class="quantity-form math">
+                                    <form>
+                                        <a class="quantity-form__minus">-</a>
+                                        <input class="quantity-form__input" type="text" value="1" />
+                                        <a class="quantity-form__plus">+</a>
+                                    </form>
+									<span class="unit">шт.</span>
+                                </div>
+                            </td>
+							<td class="order-td__sum">1 420 <span class="unit">грн.</span></td>
+							<td class="order-td__stock">
+								<span class="stock_no">Нет</span>
+							</td>
+							<td class="order-td__remove">
+								<a href="#" class="remove-button"></a>
+							</td>
+						</tr-->
+                  <tr id="commissions" style="display: none;">
+                    <td class="order-td__name" colspan="4">
+                      <a href="#">Коммиссионные</a>
+                    </td>
+                    <td class="order-td__sum" colspan="3"><span id="commissions-value">4.27</span> <span
+                        class="unit">грн.</span></td>
+                  </tr>
+                  <tr>
+                    <td class="order-td__total-name" colspan="4">Итоговая стоимость</td>
+                    <td class="order-td__total-sum" colspan="3">
+                      <div><span class="total-sum" id="total-sum">171</span><span class="total-sum"
+                          id="total-sum-commissions" style="display: none;">175.27</span> <span class="unit">грн.</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="order-buttons">
+                  <input type="checkbox" class="form__checkbox" id="check_conditions_1">
+                  <label for="check_conditions_1" class="checkbox__label">Цим я даю <a href="#modal-confirm">Згоду</a>
+                    на збір, обробку та передачу моїх персональних даних</label>
+                </div>
+                <div class="order-buttons">
+                  <input type="submit" style="opacity: 0.7" class="button button_confirm" value="Оформить заказ">
+                  <a href="http://akb911.in.ua" class="button continue">Продолжить покупки</a>
+                </div>
+                <input type="hidden" name="total_price" value="171">
+              </div>
+            </div>
+            <!--/order cart-->
+          </div>
+        </form>
+        <!--/order-->
+
+        <div class="remodal" data-remodal-id="modal-confirm">
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+          <div class="modal-header">
+            <span class="modal--title">ЗГОДА КЛІЄНТА НА ОБРОБКУ ПЕРСОНАЛЬНИХ ДАНИХ</span>
+          </div>
+          <div class="modal-content short">
+            <p>&nbsp;&nbsp;Я, користувач он-лайн сервісу по замовленню шин та автозапчастин &laquo;Speedline&raquo;,
+              відповідно до вказаної мною інформації на сайті http://speed-line.com.ua, керуючись Законом України
+              &laquo;Про захист персональних даних&raquo; надаю он-лайн сервісу по замовленню шин та автозапчастин
+              &laquo;Speedline&raquo; (далі &ndash; &laquo;Speedline&raquo;) згоду на обробку моїх персональних даних,
+              на збирання &laquo;Speedline&raquo; цих персональних даних з будь-яких загальнодоступних джерел, на дії
+              щодо захисту таких персональних даних, на визначення на власний розсуд &laquo;Speedline&raquo; порядку
+              доступу третіх осіб до моїх персональних даних, а також на дії щодо надання часткового або повного права
+              обробки цих персональних даних іншим суб&#39;єктам відносин (в тому числі іноземним), пов&#39;язаних із
+              персональними даними, в обсязі, визначеному на власний розсуд &laquo;Speedline&raquo;, з метою
+              забезпечення реалізації цивільно-правових та господарсько-правових відносин, оприлюднення (повідомлення)
+              результатів участі в розіграшах та акціях &laquo;Speedline&raquo;, проведення розрахунків, бухгалтерського
+              та податкового обліку, для комунікації та договірних відносин з державними органами, контрагентами та
+              іншими третіми особами в ході здійснення господарської діяльності, а також для інших цілей, що не
+              суперечать чинному законодавству України.</p>
+
+            <p>Я, як суб&rsquo;єкт персональних даних повідомлений &laquo;Speedline&raquo; про: свої права, визначені
+              ст. 8 Закону України &laquo;Про захист персональних даних&raquo;, &laquo;Speedline&raquo; є володільцем
+              моїх персональних даних, мету їх збору, осіб, яким передаються мої персональні дані та про те, що
+              поширення (передача) моїх персональних даних може бути здійснена виключно відповідно до ст. 14 Закону
+              України &laquo;Про захист персональних даних&raquo;:</p>
+
+            <p>&nbsp;&nbsp;Ця згода діє протягом невизначеного терміну.</p>
+
+            <p>&nbsp;&nbsp;Надана мною інформація є достовірною, і я не заперечую проти її додаткової перевірки.
+              Володілець не несе відповідальності за будь-яку обробку, незабезпечення режиму доступу і захисту моїх
+              персональних даних третіми особами, в тому числі працівниками володільця, якщо надання доступу до таких
+              персональних даних (чи інша дія, яка створила можливість подальшої несанкціонованої обробки третіми
+              особами) було вчинено володільцем або іншою особою з мого дозволу в особистих цілях або інших цілях, не
+              пов&rsquo;язаних з виконанням обов&rsquo;язків за договором, з використанням технічних засобів чи інших
+              матеріалів/обладнання володільця.</p>
+
+            <p>&nbsp;&nbsp; Я, також погоджуюсь, що &laquo;Speedline&raquo; має право направляти SMS- повідомлення/
+              листи &ndash; повідомлення на електронну пошту/ повідомлення, відправлені іншими засобами, комерційні
+              пропозиції та рекламні матеріали, при цьому я погоджуюсь з тим, що направлення вказаної інформації на
+              електронну пошту /номери телефонів, повідомлені мною, буде здійснювати як самостійно, так і з залученням
+              контрагентів (операторів мобільного зв&rsquo;язку тощо). Я погоджуюсь та розумію, що саме я несу всі
+              ризики, пов&lsquo;язані з тим, що направлена &laquo;Speedline&raquo; інформація стане доступною третім
+              особам. Я ознайомлений з тим, що в будь-який момент можу відмовитись від отримання вказаних повідомлень
+              шляхом направлення інформації про таку відмову &laquo;Speedline&raquo;.</p>
+          </div>
+          <!--div class="modal-footer">
+		 <div class="modal-footer__row">
+			<input type="checkbox" class="form__checkbox" id="agreement_1">
+            <label class="checkbox__label" for="agreement_1">Я даю согласие на обработку моих персональных данных</label>
+			<input type="checkbox" class="form__checkbox" id="agreement_2">
+            <label class="checkbox__label" for="agreement_2">Я даю согласие на проверку моих данных в бюро кредитных историй</label>
+		</div>
+		<div class="modal-footer__buttons">
+			<button class="form__button">Продолжить</button>
+		</div>
+    </div-->
+        </div>
+        <div class="remodal" data-remodal-id="modal-confirm-2">
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+          <div class="modal-header">
+            <span class="modal--title">ПУБЛІЧНА ПРОПОЗИЦІЯ (ОФЕРТА)</span>
+          </div>
+          <div class="modal-content">
+            <p><strong>Перед переглядом даного сайту уважно прочитайте дані умови. Якщо ви не згодні з цими умовами, не
+                використовуйте цей сайт. Використання даного сайту, у тому числі заповнення різних форм, заяв, а також
+                замовлення Вами товарів/послуг з використанням даного сайту означає Вашу згоду з умовами даною угодою
+                користувача.</strong></p>
+
+            <p><strong>ПУБЛІЧНА ПРОПОЗИЦІЯ (ОФЕРТА)</strong></p>
+
+            <p>місто Київ
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Дата публікації: 02.12.2021р.</p>
+
+            <p>1. Терміни, що вжито у даній Оферті:</p>
+
+            <p><strong>Адміністрація</strong>- адміністрація веб-сайту інтернет-магазину&nbsp;speedline &ndash; Фізична
+              особа-підприємець Митропан Сергій Петрович, реєстраційний номер платника податків 2891919813.</p>
+
+            <p><strong>Замовлення</strong>- звернення користувача через Сайт до Продавця з проханням продати товар, а
+              також сукупність товарів, замовлених користувачем<strong> </strong></p>
+
+            <p><strong>Користувач</strong>- особа, яка переглядає інформацію на сайті та / або замовляє та / або отримує
+              товари з використанням інструментів сайту. Отримувач і Платник є Користувачами.</p>
+
+            <p><strong>Отримувач</strong>- особа, що вказана платником у якості особи, уповноваженої отримати товар
+              згідно з замовленням. Якщо інше не вказано у формі замовлення, Отримувачем є Платник.</p>
+
+            <p><strong>Продавець</strong>- юридична особа або фізична особа-підприємець, що розміщує на сайті інформацію
+              про товари/послуги, які реалізує. Продавцем може бути як Адміністрація, так і будь-яка інша особа, якій
+              Адміністрація сайту надала дозвіл на розміщення відомостей про товари/послуги такої особи
+              (рекламно-інформаційні послуги). Найменування Продавця вказується у документах на передачу товару
+              отримувачу (товарному чеку, витратна накладна) або інших документах, що підтверджують факт передачі товару
+              отримувачу).</p>
+
+            <p><strong>Платник</strong>- особа, що оплачує замовлення.</p>
+
+            <p><strong>Пропозиція</strong>- інформація, яку розміщено на Сайті про конкретний товар, який користувач
+              може придбати. Пропозиція включає у себе: інформацію про сам товар, інформацію про його ціну, способах
+              оплати і доставки, а також інші умови придбання товару користувачем. Умови пропозиції визначаються
+              продавцем.</p>
+
+            <p><strong>Публічна оферта</strong> <strong>(Оферта)&ndash;</strong> пропозиція Продавця, адресована
+              невизначеному колу фізичних осіб відповідно до ст. 641 Цивільного кодексу України, укласти з нею договір
+              на умовах, що містяться в ній.</p>
+
+            <p><strong>Сайт</strong>- веб-сайт інтернет-магазину&nbsp;speedline, включаючи усі веб-сторінки, що
+              розміщений в мережі Інтернет за адресою:&nbsp;</p>
+
+            <p><a href="https://speed-line.com.ua/">https://speed-line.com.ua/</a></p>
+
+            <p>2. Загальні умови.</p>
+
+            <p>2.1 Сайт є платформою для розміщення пропозицій про продаж товарів.</p>
+
+            <p>2.2 Публічна пропозиція (оферта) укладення договору купівлі-продажу, що розміщене на даному сайті, є
+              публічною офертою.</p>
+
+            <p>2.2.1 Користувач приймає правила користування Сайтом, зареєструвавшись на Сайті інтернет-магазина&nbsp;<a
+                href="https://autodoc.ua/" style="color:blue; text-decoration:underline">https://speed-line.com.ua/</a>
+            </p>
+
+            <p>2.2.2 Повним та безумовним акцептом Користувачем даної Публічної оферти (моментом укладення договору) є
+              підтвердження Користувачем під час оформлення Замовлення, що він ознайомлений з даною Публічною офертою та
+              приймає умови оферти.</p>
+
+            <p>2.3 Отримуючи доступ до матеріалів Сайту, вважається, що Користувач погодився з умовами даної Публічної
+              оферти та ознайомився з ними.</p>
+
+            <p>2.4 Адміністрація Сайту має право у будь-який час в односторонньому порядку змінити умови даної угоди.
+              Такі зміни вступають в силу з моменту розміщення нової версії угоди на сайті.</p>
+
+            <p>3. Інформація про товар.</p>
+
+            <p>3.1 Інформацію про товар розміщено на Сайті, на самому товарі, його упаковці, у товаро-супроводжуючих
+              документах на товар. Інформація про товар також може надаватися дистанційно (по телефону, шляхом
+              розміщення інформації про товар на Сайті). Користувач підтверджує свою згоду на отримання інформації про
+              товар за допомогою засобів дистанційного зв&#39;язку.</p>
+
+            <p>3.2 При отриманні товару, Отримувач зобов&rsquo;язаний ознайомитися з інформацією про товар, що міститься
+              на самому товарі та/або упаковці та/або товаро-супроводжуючих документах на товар. У випадку необхідності
+              отримання додаткової інформації щодо товару, Отримувач зобов&rsquo;язаний зв&rsquo;язатися з Продавцем та
+              отримати всю необхідну інформації шляхом дистанційного зв&rsquo;язку безпосередньо до моменту отримання
+              &nbsp;Отримувачем товару.</p>
+
+            <p>3.3 Ціна на товар, що зазначена на Сайті, є остаточною на замовлений та/або сплачений Покупцем товар та
+              зміні не підлягає. Ціна на товар може бути змінена Продавцем до моменту оформлення Отримувачем замовлення.
+            </p>
+
+            <p>4. Обмеження відповідальності.</p>
+
+            <p>4.1 Сайт є платформою для розміщення пропозицій про товар. У зв&#39;язку з цим, Адміністрація (крім
+              випадків, коли адміністрація є продавцем) не несе будь-якої відповідальності перед користувачами
+              (Платниками, Одержувачами) за виконання замовлення третіми особами (та пов&#39;язані з цим питання, в тому
+              числі, але не виключно: за відповідність умов пропозиції фактичним умовам продажу товарів, за відсутність
+              товару, за прострочення доставки товару, за якість товару, за належне виконання гарантійних
+              зобов&#39;язань третіми особами та/ або виробниками.</p>
+
+            <p>4.2 Адміністрація ні за яких обставин не несе відповідальності за будь-які збитки (включаючи, але не
+              обмежуючись збитком від втрати прибутку, даних або від переривання ділової активності), що виникли
+              внаслідок використання, неможливості використання або результатів використання цього сайту.</p>
+
+            <p>4.3 Відповідальність Продавця за зміну умов отримання (строк поставки, вартість) товару у порівнянні з
+              вказаними у пропозиції обмежується тем, що Отримувач (Користувач, Платник) має право відмовитися від
+              придбання товару та вимагати повернення сплачених за нього грошових коштів (якщо вони сплачені).</p>
+
+            <p>4.4 На товари, на які встановлено гарантійний строк, діють гарантійні зобов&#39;язання відповідно до
+              умов, вказаних у гарантійному талоні, заповненому Продавцем при відвантаженні товару.</p>
+
+            <p>4.5 Користувач несе відповідальність за достовірність даних, вказаних у формі замовлення. У випадку, коли
+              неточні (некоректні/помилкові) дані у замовленні призвели до додаткових витрат з боку Продавця,
+              пов&#39;язаних з доставкою товару по невірній адресі або видачу товару неналежному Отримувачу, усі
+              пов&#39;язані з цим збитки та витрати покладаються на Користувача.</p>
+
+            <p>5. Обов&#39;язки сторін.</p>
+
+            <p>5.1 Користувач зобов&#39;язується уважно ознайомитися з даною Публічною офертою. У випадку незгоди з її
+              умовами Користувач зобов&#39;язується негайно припинити користування Сайтом.</p>
+
+            <p>5.2 Користувач зобов&#39;язується не виконувати дій, що можуть вважатися як ті, що порушують українське
+              законодавство або норми міжнародного права, у тому числі в сфері інтелектуальної власності, авторських
+              та/або суміжних правах, а також будь-яких дій, що призводять або можуть призвести до порушення нормальної
+              роботи сайту та сервісів Сайту.</p>
+
+            <p>5.3 Використання матеріалів Сайту без згоди правовласників не допускається. Для правомірного використання
+              матеріалів Сайту необхідне укладення ліцензійних договорів (отримання ліцензій) від правовласників.</p>
+
+            <p>5.4 При цитуванні матеріалів Сайту, включаючи авторські твори, що охороняються, посилання на Сайт
+              обов&#39;язкове.</p>
+
+            <p>5.5 Коментарі і інші записи користувача на Сайті не повинні вступати в протиріччя з вимогами
+              законодавства України і загальноприйнятих норм моралі.</p>
+
+            <p>5.6 Користувач попереджений про те, що Адміністрація Сайту не несе відповідальності за перехід і
+              використання ним зовнішніх ресурсів, посилання на які можуть міститися на Сайті.</p>
+
+            <p>5.7 Користувач приймає положення про те, що всі матеріали і сервіси Сайту або будь-яка їх частина можуть
+              бути у супроводі з рекламою. Користувач згоден з тим, що Адміністрація Сайту не несе якої-небудь
+              відповідальності і не має яких-небудь зобов&#39;язань у зв&#39;язку з такою рекламою.</p>
+
+            <p>5.8 Користувач розуміє, що треті особи є окремими суб&#39;єктами господарювання, не підконтрольними
+              Адміністрації. Користувач усвідомлює, що Адміністрація не має будь-яких повноважень відносно впливу на
+              виконання Продавцями своїх зобов&#39;язань відносно прийняття і виконання замовлення, а також
+              зобов&#39;язань, що виникають після продажу товару.</p>
+
+            <p>6. Порядок обміну і повернення товару одержувачем (Користувачем, Платником).</p>
+
+            <p>6.1 Обмін і повернення товару (у тому числі, при розірванні договору купівлі-продажу), здійснюється в
+              порядку чинного законодавства України, у т.ч. Закону України &laquo;Про захист прав споживачів&raquo;.
+              Детальна інформація по даним питанням міститься у відповідних розділах Сайту.</p>
+
+            <p>7. Персональні дані.</p>
+
+            <p>7.1 Оформляючи замовлення на Сайті&nbsp;speedline&nbsp;та/або проставляючи галочку у відповідному полі на
+              сайті&nbsp;speedline&nbsp;перед заповненням своїх персональних даних Користувач дає свою згоду
+              Адміністрації на збір і обробку (накопичення, зберігання, адаптація, відновлення, використання, поширення,
+              знеособлення і знищення) вказаних їм даних, а саме: прізвище, ім&#39;я, по батькові; електронної пошти;
+              телефону; адреси; дані паспорту і дає свою згоду на передачу (поширення) його даних ТОВ &laquo;НОВА
+              ПОШТА&raquo;, іншим транспортно-експедиторським і кур&#39;єрським організаціям. Дане положення діє без
+              обмеження терміну дії.</p>
+
+            <p>7.2 Джерелом збору персональних даних є інформація, безпосередньо і добровільно надана користувачем..</p>
+
+            <p>7.3 Суб&#39;єкт персональних даних, відповідно до Закону України &laquo;Про захист персональних
+              даних&raquo;, має право: знати про джерела збору, місцезнаходження своїх персональних даних, мету їх
+              обробки, місцезнаходження або місце проживання (перебування) власника чи розпорядника персональних даних
+              або дати відповідне доручення щодо отримання цієї інформації уповноваженим ним особам, крім випадків,
+              встановлених законом; отримувати інформацію про умови надання доступу до персональних даних, зокрема
+              інформацію про третіх осіб, яким передаються його персональні дані; на доступ до своїх персональних даних;
+              отримувати не пізніше, ніж за тридцять календарних днів з дня надходження запиту, крім випадків,
+              передбачених законом, відповідь про те, обробляються чи зберігаються його персональні дані, а також
+              отримувати зміст таких персональних даних; пред&#39;являти вмотивоване вимога власнику персональних даних
+              із запереченням проти обробки своїх персональних даних; пред&#39;являти вмотивоване вимога щодо зміни або
+              знищення своїх персональних даних будь-яким власником і розпорядником персональних даних, якщо ці дані
+              обробляються незаконно чи є недостовірними; на захист своїх персональних даних від незаконної обробки та
+              випадкової втрати, знищення, пошкодження у зв&#39;язку з умисним приховуванням, ненаданням чи несвоєчасним
+              їх наданням, а також на захист від надання відомостей, що є недостовірними чи ганьблять честь, гідність та
+              ділову репутацію фізичної особи; звертатися зі скаргами на обробку своїх персональних даних до
+              уповноваженого або в суд; застосовувати засоби правового захисту в разі порушення законодавства про захист
+              персональних даних; вносити застереження стосовно обмеження права на обробку своїх персональних даних під
+              час надання згоди; відкликати згоду на обробку персональних даних; знати механізм автоматичної обробки
+              персональних даних; на захист від автоматизованого рішення, яке має для нього правові наслідки.</p>
+
+            <p>8. Інші умови.</p>
+
+            <p>8.1 Користувач має право призначити Одержувачем товару, що купується, третю особу. У цьому випадку
+              Одержувач зобов&#39;язаний вказати в формі замовлення дані, необхідні для ідентифікації Одержувача і
+              доставки йому товару. На відносини сторін, в такому випадку, поширюються положення ст. 636 Цивільного
+              кодексу України.</p>
+
+            <p>8.2 Для видачі товару Одержувачу останній зобов&#39;язаний пред&#39;явити при отриманні товару документ,
+              що засвідчує особу (паспорт).</p>
+
+            <p>8.3 При отриманні товару Одержувач зобов&#39;язаний розписатися в документах, що підтверджують отримання
+              товару.</p>
+
+            <p>8.4 Всі можливі суперечки, що випливають з цієї угоди або пов&#39;язані з ним, підлягають вирішенню
+              відповідно до чинного законодавства України.</p>
+
+            <p>8.5 Ніщо в угоді не може розумітися як встановлення між Користувачем і Адміністрації Сайту агентських
+              відносин, відносин товариства, відносин по спільній діяльності, відносин особистого найму, або якихось
+              інших відносин, прямо не передбачених угодою.</p>
+
+            <p>8.6 Визнання судом будь-якого положення угоди недійсною не тягне недійсності інших положень угоди.</p>
+
+            <p>8.7 Бездіяльність з боку Адміністрації Сайту в разі порушення будь-ким з користувачів положень угоди не
+              позбавляє адміністрацію Сайту права зробити пізніше відповідні дії на захист своїх інтересів і захист
+              авторських прав на які охороняються відповідно до законодавства матеріали Сайту. Користувач підтверджує,
+              що ознайомлений з усіма пунктами цієї угоди і безумовно приймає їх.</p>
+
+            <p>&nbsp;</p>
+          </div>
+          <!--div class="modal-footer">
+		 <div class="modal-footer__row">
+			<input type="checkbox" class="form__checkbox" id="agreement_3">
+            <label class="checkbox__label" for="agreement_3">Я даю согласие на обработку моих персональных данных</label>
+			<input type="checkbox" class="form__checkbox" id="agreement_4">
+            <label class="checkbox__label" for="agreement_4">Я даю согласие на проверку моих данных в бюро кредитных историй</label>
+		</div>
+		<div class="modal-footer__buttons">
+			<button class="form__button red">Отменить</button><button class="form__button">Продолжить</button>
+		</div>
+    </div-->
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="logo"><a href="/"><img src="/img/logo.png" alt=""></a></div>
+      <div class="footer-nav">
+      </div>
+      <!--***-->
+      <div class="footer__copyrights">
+        <!--**-->
+        <p>© Speedline. Всі права захищені</p>
+        <!--**-->
+        <!--**-->
+      </div>
+      <!--***-->
+    </footer>
+    <!--/FOOTER-->
+
+  </div>
+
+  <!--POP-UPS-->
+  <div class="remodal" data-remodal-id="modal-1">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <div class="modal-header">
+      <span class="modal--title">Шиномонтаж</span>
+    </div>
+    <div class="modal-content">
+      <p>В нашем распоряжении новейшее современное оборудовании компании Trommelberg, которое позволяет работать с
+        колесами практически любого радиуса обеспечивая высококлассный результат, а также бережное отношение к дискам и
+        шинам в т.ч. низкопрофильным и run-flat.</p>
+    </div>
+  </div>
+  <!--***-->
+  <div class="remodal" data-remodal-id="modal-2">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <div class="modal-header">
+      <span class="modal--title">Сезонное хранение</span>
+    </div>
+    <div class="modal-content">
+      <p>Все болты обтягиваются исключительно вручную с использованием динамометрического ключа, с усилием установленным
+        производителем Вашего автомобиля. Это позволяет избежать: срыва резьбы, откручивания колес в движении,
+        перезатяжки колес.</p>
+    </div>
+  </div>
+  <!--***-->
+  <div class="remodal" data-remodal-id="modal-3">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <div class="modal-header">
+      <span class="modal--title">Хранение сезонное</span>
+    </div>
+    <div class="modal-content">
+      <p>При выполнении работ мы используем исключительно высококачественные расходные материалы от именитых в своей
+        сфере брендов, что гарантирует стабильно высокий уровень качества наших услуг.</p>
+    </div>
+  </div>
+  <!--***-->
+  <!--/POP-UPS-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="http://195.226.192.57:4444/basket/js/jquery-ui.min.js"></script>
+  <script src="http://195.226.192.57:4444/basket/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="http://195.226.192.57:4444/basket/js/remodal.min.js"></script>
+  <script src="http://195.226.192.57:4444/basket/js/jquery.maskedinput.js"></script>
+  <script src="http://195.226.192.57:4444/basket/js/functions.js"></script>
+  <script src="http://195.226.192.57:4444/basket/js/validator.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.site-header:before,
+.site-header:after,
+.site-header {
+  background: #000;
+  border-bottom: 5px solid #e75329;
+}
+
+.order-step__header,
+.order-cart__header,
+.order-step__header,
+.order-cart__header {
+  background: #e75329;
+  color: #fff;
+}
+
+.form__button:hover,
+.button:hover {
+  color: #fff;
+  background: #f3901d;
+}
+
+.form__button,
+.button {
+  background: #e75329;
+}
+
+.continue {
+  background: #e75329;
+}
+
+.form__button,
+.button {
+  opacity: 1 !important;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.site-footer {
+  padding: 40px 30px 40px 330px;
+}
+
+.site-footer,
+.site-footer:before,
+.site-footer:after {
+  background: #000;
+}
+
+.site-footer .logo {
+  background: url(../img/logo_bot.jpg) left top no-repeat;
+  width: 200px;
+  height: 56px;
+}
+
+.site-footer .logo img {
+  display: none;
+}
+
+.site-footer a:hover {
+  color: #2f95ff;
+}/*# sourceMappingURL=additions.css.map */
