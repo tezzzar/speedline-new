@@ -137,7 +137,6 @@ input.search-form__input {
   background-image: url(../img/logo_bot.jpg);
   width: 199px;
   height: 56px;
-  box-sizing: border-box;
 }
 
 .footer__logo img {
@@ -146,8 +145,10 @@ input.search-form__input {
 
 .logo {
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: url(../img/logo.jpg);
-  width: 200px;
+  width: 199px;
+  height: 56px;
 }
 
 .logo img {
