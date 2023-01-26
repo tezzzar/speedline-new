@@ -1,0 +1,798 @@
+/*
+ * Коррекция бокового окна
+ */
+
+#slide_window  .mCSB_dragger_bar{
+    width:9px!important;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0px!important;
+}
+
+#slide_window .callback_close {
+    background: #5597a1 !important;
+}
+
+
+/*
+ * Кнопка выбора авто 
+ */
+ 
+.cars_select_button_block {
+  display: inline-block;
+  width: 100%;
+  padding-left:15px;
+  margin-top: 15px;
+  
+  
+}
+
+.cars_select_button {
+	font-size: 16px;
+	color: #fff !important;
+  display: inline-block;
+  width: 100%;
+  
+	vertical-align: middle;
+}
+
+.cars_select_button .button_text {
+  display: inline-block;
+  width: 100%;
+	background: #5597a1;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+  line-height: 50px;
+  padding: 0px 20px;
+  height: 50px;
+}
+
+
+.cars_select_button .button_row {
+	background: #5597a1;
+  display: none;
+  width: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+  padding: 0px 20px;
+  max-height: 50px;
+  padding-top:4px;
+  padding-right: 45px;
+}
+
+.cars_select_button.selected .button_row{
+  display: inline-block;
+  vertical-align: middle;
+    position: relative;
+  
+  min-height: 45px;
+}
+
+
+.cars_select_button.selected .button_row .callback_close {
+  display: inline-block;
+    position: absolute;
+	right: 5px;
+	top: 5px;
+	line-height: 1.0;
+  
+}
+
+.cars_select_button.selected .button_row .callback_close::before {
+  content: "";
+}
+
+.fix { 
+	display: inline-block;
+	width: 0px; 
+	height: 100%; 
+	vertical-align: middle;
+}
+
+.cars_select_button.selected .button_text{
+  display: none;
+}
+
+
+.cars_select_button .button_text:hover {
+	background: #f3901d;
+}
+
+.button_row .button_row_element {
+	display: inline-block;
+  width: auto;
+	text-transform: none;
+	font-weight: bold;
+	margin-right: 15px;
+	line-height: 1.00; 
+}
+
+.button_row .button_row_element.second_row{
+	font-size: 14px;
+	font-weight: 400;   
+    overflow: hidden; 
+}
+
+.button_row .button_row_element:empty {
+	
+  display: none!important;
+}
+
+.cars_select_button.selected .button_row br {
+  height: 0px;
+  display: inline-block;
+}
+
+.cars_select_button.onel .button_row br {
+  display: none;
+}
+
+.cars_select_button.onel .button_row {
+  line-height: 48px;
+  padding-top: 0px;
+  display: block!important;  
+}
+
+.cars_select_button.onel .button_row .button_row_element {
+	display: inline-block;  
+	vertical-align: middle;
+}
+
+.fix { 
+	display: inline-block;
+	width: 0px; 
+	height: 100%; 
+	vertical-align: middle;
+}
+
+
+
+
+/*
+ * Текст особенностей авто 
+ */
+
+.cars_select_text_block {
+  display: inline-block;
+  width: 100%;
+}
+
+.cars_select_text_block .cars_select_text {
+	font-size: 0px;
+  padding: 0px;
+  padding-bottom: 0px;
+  
+    opacity: 0;
+    transition: font-size .25s,
+                padding .25s,
+                padding-bottom .25s,
+                opacity .5s .25s;
+}
+
+.cars_select_text_block.showtext  .cars_select_text {
+	line-height: 1.0;
+	font-size: 14px;
+  padding: 10px;
+  padding-bottom: 0px;
+
+    opacity: 1;
+  
+    transition: font-size .25s,
+                padding .25s,
+                padding-bottom .25s,
+                opacity .5s .25s;
+}
+
+
+
+
+
+/*
+Попап
+*/
+
+
+
+/* = Modal
+---------------------------------------------
+--------------------------------------------- */
+
+html.remodal-is-locked {
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
+}
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: "";
+}
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.remodal {
+  position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+.remodal-is-initialized {
+  display: inline-block;
+}
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.remodal-overlay {
+  background: rgba(0, 0, 0, 0.9);
+}
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation-name: remodal-overlay-opening-keyframes;
+  animation-name: remodal-overlay-opening-keyframes;
+}
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-name: remodal-overlay-closing-keyframes;
+  animation-name: remodal-overlay-closing-keyframes;
+}
+.remodal-wrapper {
+  padding: 10px 10px 0;
+}
+.remodal_x {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 5px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #fff;
+  max-width: 1080px;
+  text-align: left;
+  font-size: 16px;
+}
+.remodal_x.remodal-is-opening,
+.remodal_x.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.remodal_x.remodal-is-opening {
+  -webkit-animation-name: remodal-opening-keyframes;
+  animation-name: remodal-opening-keyframes;
+}
+
+.remodal_x.remodal-is-closing {
+  -webkit-animation-name: remodal-closing-keyframes;
+  animation-name: remodal-closing-keyframes;
+}
+.remodal_x,
+.remodal-wrapper:after {
+  vertical-align: middle;
+}
+.remodal-close, .comments-form__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	overflow: visible;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	background: #03727e;
+	cursor: pointer;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-decoration: none;
+	color: #fff;
+	border: 0;
+	font-style: normal;
+	outline: 0;
+	border-radius: 50px 50px 50px 50px;
+	-moz-border-radius: 50px 50px 50px 50px;
+	-webkit-border-radius: 50px 50px 50px 50px;
+}
+.remodal-close:hover, .remodal-close:focus, .comments-form__close:hover, .comments-form__close:focus {
+  background: #f3901d;
+}
+.remodal-close:before, .comments-form__close:before {
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 29px;
+  content: "\00d7";
+  text-align: center;
+}
+.comments-form__close:before {
+	top: -4px;
+	left: 1px;
+}
+.remodal-confirm::-moz-focus-inner,
+.remodal-cancel::-moz-focus-inner,
+.remodal-close::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38;
+}
+.modal-header {
+}
+.modal--title {
+	display: block;
+	font-size: 2.8rem;
+	font-weight: bold;
+	padding: 0 0 30px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.modal--title strong {
+	color: #03727e;
+	
+}
+.modal-content {
+}
+.modal-footer {
+	border-top: 0px solid #ccc;
+	padding: 35px 0 0 0;
+	overflow: hidden;
+}
+.continue-button {
+	float: left;
+}
+.form__button {
+	float: right;
+}
+.form_normal .form__button {
+	float: none;
+}
+@media (max-width: 1100px) {
+	.remodal_x {
+	  padding: 25px 20px 25px 20px;
+	}
+	.modal--title {
+		font-size: 2.6rem;
+		padding: 0 0 15px 0;
+	}
+}
+@media (max-width: 800px) {
+	.remodal_x {
+	  padding: 20px 15px 20px 15px;
+	}
+	.modal--title {
+		font-size: 2.4rem;
+		padding: 0 0 10px 0;
+	}
+}
+@media (max-width: 640px) {
+	.remodal_x {
+	  padding: 20px 10px 20px 10px;
+	}
+	.modal--title {
+		font-size: 2.2rem;
+		padding: 0 0 10px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Коррекция окна выбора авто
+*/
+
+.cars_select_modal {
+}
+
+.cars_select_modal .selection-step .checkbox-button {
+	display: table!important;
+	padding-top: 0px;
+	padding-bottom: 0px!important;
+	width: 100%;
+}
+
+.cars_select_modal .selection-step .checkbox-button__text {
+	display: table-cell !important;
+	padding-top: 0px;
+	vertical-align:middle;
+	width: 100%;
+	padding-bottom: 0px!important;
+	height: 60px !important;
+}
+
+.cars_select_modal .checkbox-button_model {
+  height: auto !important;
+  padding: 1px !important;
+}
+
+.cars_select_modal .checkbox-button_model .checkbox-button__text {
+  height: 60px !important;
+  text-align: center !important;
+  padding-left: 3px !important;
+}
+
+.cars_select_modal .checkbox-button {
+  position: relative;
+  text-align: center !important;
+  display: block;
+  height: 60px !important;
+  padding: 0px 3px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  white-space: nowrap;
+  border: 0px solid #8e8e8e;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cars_select_modal .cell_checkbox.size_3,  .cars_select_modal .cell_checkbox.size_10 {
+  width: 25%;
+}
+
+.cars_select_modal .active .selection-step__content, .cars_select_modal .step-for-select .selection-step__content {
+  display: inline-block;
+  width: 100%;
+  min-height: 1px;
+}
+
+.cars_select_modal .selection-step__header {
+  padding: 0px 10px 0px 63px;
+    display: table;
+  width: 100%;
+}
+
+
+.cars_select_modal .selection-step__header .selection-step__title{
+  vertical-align: middle;
+    display: table-cell;
+  width: 100%;
+}
+
+.cars_select_modal .modal-footer {
+  padding: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1280px) {
+.cars_select_button_block  {
+	padding-left: calc(22% + 20px);
+
+}
+
+
+
+.cars_select_button.selected .button_row br {
+  height: 0px;
+  display: inline-block;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+.cars_select_button_block {
+  padding-left: 0;
+  margin-bottom: 10px;
+  
+}
+
+.cars_select_text {
+	font-size: 12px;
+	font-weight: 400;  
+}
+
+
+.cars_select_modal .cell_checkbox.size_3 {
+  width: 100%;
+}
+
+.cars_select_modal .cell_checkbox.size_10 {
+  width: 100%;
+}
+
+.cars_select_modal .selection-step .checkbox-button__text {
+	height: 50px !important;
+}
+
+.cars_select_modal .checkbox-button_model .checkbox-button__text {
+  height: 50px !important;
+  text-align: left !important;
+}
+
+.checkbox-button_brand .checkbox-button__text {
+  text-align: left !important;
+}
+
+.cars_select_modal .checkbox-button {
+  text-align: left !important;
+  height: 50px !important;
+    padding-left: 20px !important;
+  font-size: 1.6rem;
+}
+
+
+
+.button_row .button_row_element.long_row_element {
+    max-width: 300px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+.selection-step__title {
+    font-size: 14px;
+}
+
+.selection-step__content {
+  display: none;
+  min-height: 100px;
+  max-height:220px;
+  margin: 10px 0;
+  overflow-y: auto;
+  padding: 0 5px 0 0;
+}
+
+
+
+.box_back #popup_window.callback2 {
+  top: 52%;
+  left: 50%;
+  transform: translate(-52%, -50%);
+}
+
+.cars_select_button .button_row {
+  max-height: none;
+  padding-bottom: 5px !important;
+}
+
+
+.cars_select_button.onel .button_row br {
+  display: none !important;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+.button_row .button_row_element.long_row_element {
+    max-width: 250px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+.cars_select_button {
+	font-size: 14px !important;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

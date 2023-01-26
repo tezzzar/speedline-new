@@ -1,0 +1,149 @@
+/* = News
+---------------------------------------------
+--------------------------------------------- */
+
+body.news .articles {
+    position: relative;
+	text-align: center;
+}
+
+body.news .article-prw {
+	text-align: left;
+}
+
+.article-exerpt {
+    position: relative;
+}
+
+body.news .pagination, body.news .showmore-button {
+    position: relative;
+	
+	display: inline-block;
+	width: 100%;
+}
+
+.dotspan {
+    position: absolute;	
+    display: inline-block;
+    line-height: 1.2!important;
+    width: 16px;
+    bottom: 0px;
+    right: 0px;
+	background-color: #fff;
+	z-index: 100;
+	padding-left: 0px;
+	color: #000;
+}
+
+.block-images-arttext .dotspan {
+   
+    bottom: 1px;
+}
+
+.article-prw a:hover .block-images-arttitle .dotspan {
+	color: #f5921d;
+}
+
+.dotspan:before {
+	content: ' ';
+	position: absolute;
+    height:  20px;
+	
+	z-index: 10;
+	display: block;
+	width: 20px;
+	top: 0px;
+	left: -20px;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.block-images-arttitle, .block-images-arttitle .dotspan {
+	font-weight: bold;
+   font-size: 1.60rem;
+}
+
+.block-images-arttext, .block-images-arttext .dotspan {
+   font-size: 1.40rem;
+}
+
+.article-prw .block-images-arttitle, .article-prw .block-images-arttext {
+    text-align: justify !important;
+	
+}
+
+/*
+.article-prw .block-images-arttitle:hover .dotspan, .article-prw .block-images-arttext:hover .dotspan {
+    display: none;
+}
+*/
+
+.article-prw__date {
+    color: #03727e;
+	display: inline-block;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+
+
+@media (max-width: 800px) {
+	
+
+.block-images-arttitle .dotspan {
+	
+    bottom: -2px;
+}
+
+.block-images-arttitle .dotspan {
+   font-size: 1.5rem;
+}
+
+.block-images-arttext .dotspan {
+   font-size: 1.3rem;
+}
+	
+
+.article-prw__title {
+    font-size: 1.5rem!important;
+}
+
+.article-prw p {
+    font-size: 1.3rem;
+    line-height: 1.2!important;
+}
+
+.article-prw .block-images.block-images-arttitle .info-inner, .article-prw .block-images.block-images-arttitle .info-inner0, .article-prw .block-images.block-images-arttitle.info {
+    min-height: 38px;
+    height: 38px;
+}
+
+.article-prw .block-images.block-images-arttext .info-inner, .article-prw .block-images.block-images-arttext .info-inner0, .article-prw .block-images.block-images-arttext.info {
+    min-height: 79px;
+    height: 79px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
