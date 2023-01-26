@@ -154,6 +154,10 @@ input.search-form__input {
 .footer__logo img {
   opacity: 0;
 }
+.footer__logo img a {
+  display: block;
+  line-height: 56px;
+}
 
 .logo {
   background-size: contain;
@@ -161,6 +165,10 @@ input.search-form__input {
   background-image: url(../img/logo.jpg);
   width: 199px;
   height: 56px;
+}
+.logo a {
+  display: block;
+  line-height: 56px;
 }
 
 .logo img {
