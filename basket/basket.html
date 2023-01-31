@@ -23,6 +23,8 @@
     gtag('config', 'UA-210393537-1');
   </script>
 
+
+
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -916,6 +918,19 @@
   </div>
 
   <!--POP-UPS-->
+  <div class="modal hide">
+    <div class="modal-block">
+      <form action="">
+        <div class="btn-close">X</div>
+        <h3>Please call for more details</h3>
+        <div class="form-field">
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="form-field"><input type="text" placeholder="Your phone"></div>
+        <button>Please call</button>
+      </form>
+    </div>
+  </div>
   <div class="remodal" data-remodal-id="modal-1">
     <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
     <div class="modal-header">
@@ -950,6 +965,40 @@
         сфере брендов, что гарантирует стабильно высокий уровень качества наших услуг.</p>
     </div>
   </div>
+
+  <!-- POP UP -->
+  <script>
+    let cardBtn = document.getElementById("radio_pay_3");
+
+    let modal = document.querySelector(".modal");
+    let closeBtn = document.querySelector(".btn-close");
+
+    function openModal() {
+      modal.classList.add("show");
+      modal.classList.remove("hide");
+    }
+
+    function closeModal() {
+      modal.classList.add("hide");
+      modal.classList.remove("show");
+    }
+
+    // cardBtn.forEach((item) => {
+    cardBtn.addEventListener("click", openModal);
+    // });
+
+    closeBtn.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    console.log(`cardBtn`);
+  </script>
+
+
   <!--***-->
   <!--/POP-UPS-->
 
