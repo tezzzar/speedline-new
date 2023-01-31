@@ -1,0 +1,2921 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#03727e">
+  <title>Speedline</title>
+  <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico.jpg">
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">-->
+  <link href="../../../css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/scroll.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/custom.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/style_cars_select.css" rel="stylesheet" type="text/css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHS156GVG9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NHS156GVG9');
+    gtag('config', 'UA-210393537-1');
+  </script>
+  <style>
+    #search-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100000;
+      background: #fff;
+      opacity: 0.4;
+      background-image: url(../../../img/loader.gif);
+      background-repeat: no-repeat;
+      background-position-x: 50%;
+      background-position-y: 50%;
+    }
+
+    .site-nav>ul>li>div {
+      padding: 0px 30px;
+      display: table-cell;
+      height: 55px;
+      vertical-align: middle;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .lang_switch.lang_active a {
+      font-weight: normal;
+      color: orange;
+    }
+  </style>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M6QNL4B');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QNL4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="wrapper">
+
+
+
+
+
+
+    <div class="box_back">
+      <div class="box_back_center">
+        <div id="slide_window" class="callback2 mCustomScrollbar _mCS_1">
+          <div class="callback_center2 site-nav">
+          </div>
+          <div class="callback_center2 filter-nav">
+
+          </div>
+          <div class="callback_close"></div>
+        </div>
+
+        <div id="popup_window" class="callback2">
+          <div class="callback_center2    cars-nav">
+            <div class="remodal_x   cars_select_modal">
+
+              <form id="form_search_auto" method="post" action="#">
+                <div class="modal-header">
+                  <span class="modal--title">Подбор по авто</span>
+                </div>
+                <div class="modal-content">
+                  <div class="selection-steps">
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="form__button" id="clear_form_search_auto"
+                    style="border: 1px solid #03727e; color: #03727e; float: left !important; background: #fff;">Оновити
+                    фільтр</button>
+                  <button type="submit" class="form__button" id="form_search_auto_button"
+                    style="display: none">Подобрать</button>
+                </div>
+              </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          <div class="callback_close"></div>
+        </div>
+      </div>
+    </div>
+    <!--TOPBAR-->
+    <div class="topbar">
+      <!--***-->
+      <ul class="topbar__nav">
+        <li class="lang_switch lang_active"><a href="/ua/">UA</a></li>
+        <li class="lang_switch  lang_last"><a href="/ru/">RU</a></li>
+        <li><a href="../../../ua/article/pro_nas/">Про нас</a></li>
+        <li><a href="../../../ua/article/dostavka_i_oplata">Доставка і оплата</a></li>
+        <li><a href="../../../ua/article/harantiya/">Гарантія</a></li>
+        <li><a href="../../../ua/article/servisnyy_tsentr">Сервісний центр</a></li>
+      </ul>
+      <!--***-->
+      <div class="topbar__phones">
+        <span class="phone"><a href="tel:095 830 30 73">095 830 30 73</a></span>
+        <span class="phone"><a href="tel:093 830 30 73">093 830 30 73</a></span>
+        <span class="phone"><a href="tel:067 830 30 73">067 830 30 73</a></span>
+      </div>
+      <!--***-->
+      <div class="user-office">
+        <a href="#" class="user-office__link">Особистий кабінет</a>
+      </div>
+      <!--***-->
+    </div>
+    <!--/TOPBAR-->
+    <!--HEADER-->
+    <header class="site-header">
+      <!--***-->
+      <div class="logo"><a href="/"><img src="../../../img/logo.jpg" alt=""></a></div>
+      <!--***-->
+      <div class="search-form">
+        <div class="search-form-inner">
+          <form id="formsearch" method="get" action="/ua/search">
+            <select class="select topselect" disabled onclick="return false;">
+              <option data-seltype="sel1">Пошук за номером запчастини</option>
+            </select>
+            <input maxlength="" name="search_word" type="text" class="search-form__input"
+              placeholder="Назва товару, ключеві слова...">
+            <div class="pholder pholder-sel1">Введите номер запчасти...</div>
+            <div class="pholder pholder-sel2">Введите VIN код...</div>
+            <div class="pholder pholder-sel3">Поиск по авто...</div>
+            <input type="submit" class="head-button search-form__button" value="">
+          </form>
+          <div class="sub-search">
+            <!---->
+          </div>
+        </div>
+      </div>
+      <a href="#" class="header-user"><span class="header__num hidden">0</span></a>
+      <!--***-->
+      <a href="#" class="header-fav"><span class="header__num hidden">0</span></a>
+      <!--***-->
+      <a href="#" class="header-compare"><span class="header__num hidden">0</span></a>
+      <!--***-->
+      <a href="http://korzina.akb911.in.ua?sessionId=4a3421f5f2edfcd4d3943096f2b29fd3" class="header-cart"><span
+          class="header__num">0</span></a>
+      <!--***-->
+      <!--***-->
+    </header>
+    <!--/HEADER-->
+
+    <!--NAVIGATION-->
+    <nav class="site-nav desk">
+      <ul class="mob-ul">
+        <li class="mob-nav-block boxfade menufade">
+          <i class="mob-nav boxfade menufade"></i>
+        </li>
+      </ul>
+      <!--***-->
+      <ul class="menu-ul">
+        <li class="menu-ul-element li-switch-closed">
+          <div class="li-switch-block">
+            <div class="li-switch"></div>
+          </div>
+          <a href="/ua/products?category[]=16" class="nav__catalog">легкові акумулятори</a>
+          <ul>
+            <li><a href="/ua/products?category[]=18">вантажні аккумулятори</a></li>
+          </ul>
+        </li>
+        <li class="menu-ul-element li-switch-closed">
+          <div class="li-switch-block">
+            <div class="li-switch"></div>
+          </div>
+          <a href="/ua/products?category[]=18" class="nav__catalog">Мото акумулятори</a>
+          <ul>
+          </ul>
+        </li>
+        <li class="menu-ul-element li-switch-closed">
+          <div class="li-switch-block">
+            <div class="li-switch"></div>
+          </div>
+          <a href="/ua/products?category[]=19" class="nav__catalog">Човнові акумулятори</a>
+          <ul>
+          </ul>
+        </li>
+        <li class="menu-ul-element li-switch-closed">
+          <div class="li-switch-block">
+            <div class="li-switch"></div>
+          </div>
+          <a href="/ua#" class="nav__catalog">Аксесуари до акумуляторів</a>
+          <ul>
+          </ul>
+        </li>
+        <li class="menu-ul-element li-switch-closed">
+          <div class="li-switch-block">
+            <div class="li-switch"></div>
+          </div>
+          <a href="/ua/news/" class="nav__catalog">Обслуговування акумуляторів</a>
+          <ul>
+          </ul>
+        </li>
+      </ul>
+      <!--***-->
+      <a href="#" class="nav__link link_user"></a>
+      <!--***-->
+    </nav>
+    <div class="site-content">
+
+      <style>
+        /*.title * {*/
+        /*display: inline;*/
+        /*}*/
+      </style>
+      <script>
+    // window.onload = function() {
+    //     function picHeight() {
+    //         $('.pika-stage').attr('style', 'height: ' + $('.pika-stage').width() + 'px !important;');
+    //     }
+    //     picHeight();
+    //     $(window).resize(function() {
+    //         picHeight();
+    //     });
+    // }
+      </script>
+
+
+      <!--content head-->
+      <div class="content__head">
+        <!--***-->
+        <div class="breadcrumbs">
+          <a href="#">Головна</a>
+          <a href="/ua/products?category[]=16">ЛЕГКОВЫЕ АККУМУЛЯТОРЫ</a>
+          <a href="#">Акумулятор Bosch S4 52Ah 470A R+ 0092S40020</a>
+        </div>
+
+        <!--***-->
+        <h1 class="product__title">Акумулятор Bosch S4 52Ah 470A R+ 0092S40020</h1>
+        <!--***-->
+        <div class="product__reviews prodrev" data-rating="4.8">
+          <div class="reviews__stars">
+            <i class="star_icon star_empty"></i>
+            <i class="star_icon star_empty"></i>
+            <i class="star_icon star_empty"></i>
+            <i class="star_icon star_empty"></i>
+            <i class="star_icon star_empty"></i>
+          </div>
+          <a class="reviews__num  showmore-comments" href="#">10 відгуки</a>
+        </div>
+
+        <!--***-->
+        <div class="product__number">Артикул: <strong>0092S40020</strong></div>
+        <!--***-->
+      </div>
+      <!--/content head-->
+
+      <!--product-->
+      <div class="content__tabs tabs">
+        <!--tabs-->
+        <ul class="tabs__list">
+          <li><a href="#about">Все про товар</a></li>
+          <li><a href="#characteristics">Характеристики</a></li>
+          <li><a href="#crosses">Аналоги <i class="tab__num">18</i></a></li>
+          <li style="display: none;"><a href="#questions">Вопросы <i class="tab__num">65</i></a></li>
+          <li style="display: none;"><a href="#video">Видеобзор</a></li>
+        </ul>
+        <!--/tabs-->
+
+        <div class="product product-item" data-product-id="123">
+          <!--tab 1-->
+          <div class="tab-content" id="about">
+            <!--product gallery-->
+            <div class="product__gallery">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__bank_textlabels">
+                </div>
+              </div>
+              <div class="gallery">
+                <ul id="pikame">
+                  <li>
+                    <a href="http://akb911.in.ua/uploads/products/bosch_0092S40020_1.jpg">
+                      <img src="http://akb911.in.ua/uploads/products/bosch_0092S40020_1.jpg"
+                        ref="http://akb911.in.ua/uploads/products/bosch_0092S40020_1.jpg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://akb911.in.ua/uploads/products/bosch_0092S40020_2.jpg">
+                      <img src="http://akb911.in.ua/uploads/products/bosch_0092S40020_2.jpg"
+                        ref="http://akb911.in.ua/uploads/products/bosch_0092S40020_2.jpg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://akb911.in.ua/uploads/products/bosch_0092S40020_3.jpg">
+                      <img src="http://akb911.in.ua/uploads/products/bosch_0092S40020_3.jpg"
+                        ref="http://akb911.in.ua/uploads/products/bosch_0092S40020_3.jpg" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/product gallery-->
+            <!--product main-->
+            <div class="product__main">
+              <!--***-->
+              <div class="product__special" style="display: none;">
+                <i class="special__label">Акция</i>
+                <span class="special__title">При покупке шин <a href="#">Michelin</a> скидка на услуги шиномонтажа
+                  <strong>50%</strong></span>
+                <p>Завершается через <i class="special__count" id="countd"></i> дней <i class="special__count"
+                    id="counth"></i>:<i class="special__count" id="countm"></i>:<i class="special__count"
+                    id="counts"></i></p>
+                <a href="#" class="continue-button">Подробнее</a>
+              </div>
+              <!--***-->
+              <div class="product__purchase">
+                <div class="product__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">57 <span class="unit">грн.</span></span>
+
+                  <div class="prices__credits">
+                    <!--a href="#" class="credit__ico">
+                                <i class="catalog-item__label label_privat masterTooltip">
+                                    <div class="tool_pool">
+                                        <div class="tooltip">
+                                            <div class="tool_inner">
+                                                info text
+                                            </div>
+                                        </div>
+                                    </div>
+                                </i></a>
+                            <a href="#" class="credit__ico">
+                                <i class="catalog-item__label label_mono masterTooltip">
+                                    <div class="tool_pool">
+                                        <div class="tooltip">
+                                            <div class="tool_inner">
+                                                info text
+                                            </div>
+                                        </div>
+                                    </div>
+                                </i>
+                            </a>
+                            <a href="#" class="credit__ico">
+                                <i class="catalog-item__label label_alfa masterTooltip">
+                                    <div class="tool_pool">
+                                        <div class="tooltip">
+                                            <div class="tool_inner">
+                                                info text
+                                            </div>
+                                        </div>
+                                    </div>
+                                </i>
+                            </a -->
+                  </div>
+                </div>
+                <div class="product__quantity">
+                  <div class="quantity-form">
+                    <form>
+                      <a class="quantity-form__minus">-</a>
+                      <input class="quantity-form__input" type="text" value="1" />
+                      <a class="quantity-form__plus">+</a>
+                    </form>
+                  </div>
+                  <div class="product__storage">
+                    <span class="storage__value">
+                      <img src="/img/storage-yes.svg" alt="">Є в наявності, остаток <strong>3 шт.</strong>
+                    </span>
+                  </div>
+                </div>
+                <!--**-->
+                <div class="product__buttons">
+                  <button onclick="makeOrder()" class="product__buy">Купити</button>
+                  <a href="http://credit.akb911.in.ua/?sum=57&art=0092S40020&product=Акумулятор Bosch S4 52Ah 470A R+ 0092S40020&quantity=1"
+                    target="_blank" class="credit-button">
+                    <span class="credit-button__label">У кредит</span>
+                  </a>
+                  <a href="#" class="compare-button"></a>
+                  <a href="#" class="fav-button"></a>
+                </div>
+                <!--**-->
+                <div class="product__seller">
+                  <div class="seller__info">
+                    <span class="seller__title">
+                      Продавец товару:
+                      <a href="#" title="Speedline">DETA</a>
+                    </span>
+                    <div class="product__reviews comrev" data-rating="4.0">
+                      <div class="reviews__stars">
+                        <i class="star_icon star_empty"></i>
+                        <i class="star_icon star_empty"></i>
+                        <i class="star_icon star_empty"></i>
+                        <i class="star_icon star_empty"></i>
+                        <i class="star_icon star_empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller__logo">
+                    <a href="#"><img src="../../../img/logo.jpg" alt=""></a>
+                  </div>
+                </div>
+                <!--**-->
+                <!--div class="product__options">
+                        <ul class="options__list">
+                            <li>
+                                <input type="checkbox" name="option-radio" class="form__checkbox" id="option-item-1">
+                                <label class="option__label" for="option-item-1">Шиномонтаж
+                                    <i class="option__info info__tip masterTooltip">
+                                        <div class="tool_pool">
+                                            <div class="tooltip">
+                                                <div class="tool_inner">
+                                                    info text
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
+                                <span class="option__price">550 <span class="unit">грн.</span></span>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="option-radio" class="form__checkbox" id="option-item-2">
+                                <label class="option__label" for="option-item-2">Сезонное хранение шин
+                                    <i class="option__info info__tip masterTooltip">
+                                        <div class="tool_pool">
+                                            <div class="tooltip">
+                                                <div class="tool_inner">
+                                                    info text
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </label>
+                                <span class="option__price">675 <span class="unit">грн.</span></span>
+                            </li>
+                        </ul>
+                    </div-->
+                <!--**-->
+              </div>
+              <!--***-->
+
+
+
+              <div class="product__delivery">
+                <div class="product__delivery-inner">
+                  <div class="title title_3"></div>
+                  <div class="delivery_inner">
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <!--***-->
+            </div>
+            <!--/product main-->
+            <div class="product__characteristics">
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Виробник</span></div>
+                <span class="char__value">Bosch</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Серія</span></div>
+                <span class="char__value">S4</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Ємність</span></div>
+                <span class="char__value">52Ah</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Пусковий струм</span></div>
+                <span class="char__value">470A</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Підтримка Start-stop</span></div>
+                <span class="char__value">No</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Технологія</span></div>
+                <span class="char__value">Кислотный</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Довжина (мм)</span></div>
+                <span class="char__value">207</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Виконання корпусу</span></div>
+                <span class="char__value">Euro</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Ширина (мм)</span></div>
+                <span class="char__value">175</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Плюсова клема</span></div>
+                <span class="char__value">справа</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Висота (мм)</span></div>
+                <span class="char__value">190</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Полярність</span></div>
+                <span class="char__value">0 (обратная)</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Тип клем</span></div>
+                <span class="char__value">Толстые (19,5/17,9 мм)</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Тип кріплення</span></div>
+                <span class="char__value">B13</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Вага</span></div>
+                <span class="char__value">12,16</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Гарантія (міс.)</span></div>
+                <span class="char__value">24</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Країна виробник</span></div>
+                <span class="char__value">Чехия</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Напруга (V)</span></div>
+                <span class="char__value">12</span>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="product__description"></div>
+            <!--product characteristics-->
+          </div>
+          <!--/tab 1-->
+          <!--tab 2-->
+          <div class="tab-content" id="characteristics">
+            <div class="product__characteristics">
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Виробник</span></div>
+                <span class="char__value">Bosch</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Серія</span></div>
+                <span class="char__value">S4</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Ємність</span></div>
+                <span class="char__value">52Ah</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Пусковий струм</span></div>
+                <span class="char__value">470A</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Підтримка Start-stop</span></div>
+                <span class="char__value">No</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Технологія</span></div>
+                <span class="char__value">Кислотный</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Довжина (мм)</span></div>
+                <span class="char__value">207</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Виконання корпусу</span></div>
+                <span class="char__value">Euro</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Ширина (мм)</span></div>
+                <span class="char__value">175</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Плюсова клема</span></div>
+                <span class="char__value">справа</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Висота (мм)</span></div>
+                <span class="char__value">190</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Полярність</span></div>
+                <span class="char__value">0 (обратная)</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Тип клем</span></div>
+                <span class="char__value">Толстые (19,5/17,9 мм)</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Тип кріплення</span></div>
+                <span class="char__value">B13</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Вага</span></div>
+                <span class="char__value">12,16</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Гарантія (міс.)</span></div>
+                <span class="char__value">24</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Країна виробник</span></div>
+                <span class="char__value">Чехия</span>
+              </div>
+              <div class="char__item">
+                <div class="char__label"><span class="char__label_inner">Напруга (V)</span></div>
+                <span class="char__value">12</span>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--product characteristics-->
+          </div>
+          <!--/tab 2-->
+          <!--tab 3-->
+          <div class="tab-content" id="crosses" style="background-color: #f4f4f4;">
+            <div class="catalog-block">
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/0092S50020" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img
+                        src="http://akb911.in.ua/uploads/products/bosch_0092S50020_1.jpg" alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Bosch S5 54Ah 530A R+ 0092S50020</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 0092S50020</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">57 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Bosch S5 54Ah 530A R+ 0092S50020&quantity=1&art=0092S50020&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/108050" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/topla_108050_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Topla Energy 50Ah 450A R+ 108050</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 108050</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 002 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 002&name=Акумулятор Topla Energy 50Ah 450A R+ 108050&quantity=1&art=108050&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/118655" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/topla_118655_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Topla TOP 55Ah 560A R+ 118655</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 118655</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 171 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 171&name=Акумулятор Topla TOP 55Ah 560A R+ 118655&quantity=1&art=118655&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/189058" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/tab_189058_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор TAB Magic 55Ah 560A R+ 189058</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 189058</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">57 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор TAB Magic 55Ah 560A R+ 189058&quantity=1&art=189058&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/415455" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/vesna_415455_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Vesna Premium 55Ah 560A R+ 415455</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 415455</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="3.5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">57 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Vesna Premium 55Ah 560A R+ 415455&quantity=1&art=415455&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/552400047" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img
+                        src="http://akb911.in.ua/uploads/products/varta_552400047_1.jpg" alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Varta Blue Dynamic 52Ah 470A R+
+                              552400047</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 552400047</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4.5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">57 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Varta Blue Dynamic 52Ah 470A R+ 552400047&quantity=1&art=552400047&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/554400053" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img
+                        src="http://akb911.in.ua/uploads/products/varta_554400053_1.jpg" alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Varta Silver Dynamic 54Ah 530A R+
+                              554400053</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: 554400053</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">57 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Varta Silver Dynamic 54Ah 530A R+ 554400053&quantity=1&art=554400053&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/CA530" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/centra_CA530_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Centra Futura 53Ah 540A R+ CA530</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: CA530</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 347 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 347&name=Акумулятор Centra Futura 53Ah 540A R+ CA530&quantity=1&art=CA530&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/CB500" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/centra_CB500_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Centra Plus 50Ah 450A R+ CB500</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: CB500</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 312 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 312&name=Акумулятор Centra Plus 50Ah 450A R+ CB500&quantity=1&art=CB500&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/DA50" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/duracell_DA50_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Duracell Advanced 50Ah 450A R+ DA50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: DA50</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">57 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Duracell Advanced 50Ah 450A R+ DA50&quantity=1&art=DA50&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/DA530" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/deta_DA530_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Deta Senator 3 53Ah 540A R+ DA530</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: DA530</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 347 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 347&name=Акумулятор Deta Senator 3 53Ah 540A R+ DA530&quantity=1&art=DA530&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/DB500" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/deta_DB500_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Deta Power 50Ah 450A R+ DB500</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: DB500</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 312 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 312&name=Акумулятор Deta Power 50Ah 450A R+ DB500&quantity=1&art=DB500&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/EA530" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/exide_EA530_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Exide Premium 53Ah 540A R+ EA530</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: EA530</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 347 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 347&name=Акумулятор Exide Premium 53Ah 540A R+ EA530&quantity=1&art=EA530&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/EB500" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/exide_EB500_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Exide Excell 50Ah 450A R+ EB500</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: EB500</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 312 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 312&name=Акумулятор Exide Excell 50Ah 450A R+ EB500&quantity=1&art=EB500&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/TA530" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/tudor_TA530_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Tudor High-tech 53Ah 540A R+ TA530</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: TA530</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 347 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 347&name=Акумулятор Tudor High-tech 53Ah 540A R+ TA530&quantity=1&art=TA530&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/TB500" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/tudor_TB500_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Tudor Technica 50Ah 450A R+ TB500</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: TB500</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 312 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 312&name=Акумулятор Tudor Technica 50Ah 450A R+ TB500&quantity=1&art=TB500&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/YBX3012" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/yuasa_YBX3012_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Yuasa SMF 52Ah 450A R+ YBX3012</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: YBX3012</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="4">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 275 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 275&name=Акумулятор Yuasa SMF 52Ah 450A R+ YBX3012&quantity=1&art=YBX3012&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+              <div class="catalog-item product-item">
+                <div class="catalog-item__inner">
+                  <a href="/ua/product/27/YBX5012" target="_blank" class="catalog-item__link">
+                    <div class="catalog-item__labels">
+                      <div class="catalog-item__bank_textlabels">
+                      </div>
+                      <div class="catalog-item__bank_labels">
+                      </div>
+                    </div>
+
+                    <div class="catalog-item__weather_labels">
+                    </div>
+                    <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/yuasa_YBX5012_1.jpg"
+                        alt=""></div>
+                    <div class="block-images block-images-prodtitle info">
+                      <div class="block-images info-inner0">
+                        <div class="block-images info-inner">
+                          <div class="block-images info-inner1">
+                            <span class="catalog-item__title">Акумулятор Yuasa Silver 54Ah 500A R+ YBX5012</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="catalog-item__number">Артикул: YBX5012</span>
+                  </a>
+
+                  <div class="product__reviews prodrev" data-rating="5">
+                    <div class="reviews__stars">
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                      <i class="star_icon star_empty"></i>
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__prices">
+                    <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                    <span class="product__price">2 456 <span class="unit">грн.</span></span>
+                  </div>
+                  <span class="catalog-stock__status instock">
+                    <span class="storage__value">
+                      Є в наявності
+                    </span>
+                  </span>
+
+                  <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 456&name=Акумулятор Yuasa Silver 54Ah 500A R+ YBX5012&quantity=1&art=YBX5012&back_to_shop=/ua/product/27/0092S40020"
+                    class="catalog-item__buy">Купить</a>
+
+                  <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-content" id="comments">
+            <!--comments-->
+            <!--/comments-->
+          </div>
+          <!--/tab 3-->
+          <!--tab 4-->
+          <div class="tab-content" id="questions">
+            <!--comments-->
+            <div class="comments">
+              <!--**-->
+              <span class="title_2">Вопросы <span class="normal">о товаре</span></span>
+              <!--**-->
+              <i class="comments-form__open fcomment boxfade popup-button fquestion"><i class="open__ico"></i>Задать
+                вопрос</i>
+              <!--**-->
+              <div class="comments_list">
+                <!--**-->
+                <div class="comment">
+                  <div class="comment_main">
+                    <div class="comment__head">
+                      <span class="comment__author">Евгений Лазоренко</span>
+                      <span class="comment__date">9 февраля 2018</span>
+                    </div>
+                    <div class="comment__body">
+                      <p>До этого использовал Nokian Hakkapeliitta R. На вид это та же резина, но мне показалась
+                        несколько мягче, может, потому что новая. Старая резина ни разу не подвела, надеюсь, эта тоже не
+                        подведёт.</p>
+                    </div>
+                    <div class="comment__foot">
+                      <a href="#" class="comment__reply fcomment popup-button freply boxfade">Ответить</a>
+                      <span class="comment__rating">
+                        <span class="rating__mark"><a href="#" class="comment__like"></a>5</span>
+                        <span class="rating__mark"><a href="#" class="comment__dislike"></a>0</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="comment comment_answer">
+                    <div class="comment_main">
+                      <div class="comment__head">
+                        <span class="comment__author">Андрей Петренко</span>
+                        <span class="comment__date">10 февраля 2018</span>
+                      </div>
+                      <div class="comment__body">
+                        <p>На вид это та же резина, но мне показалась несколько мягче, может, потому что новая. Старая
+                          резина ни разу не подвела, надеюсь, эта тоже не подведёт. До этого использовал Nokian
+                          Hakkapeliitta R</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--**-->
+                <div class="comment">
+                  <div class="comment_main">
+                    <div class="comment__head">
+                      <span class="comment__author">Евгений Лазоренко</span>
+                      <span class="comment__date">9 февраля 2018</span>
+                    </div>
+                    <div class="comment__body">
+                      <p>До этого использовал Nokian Hakkapeliitta R. На вид это та же резина, но мне показалась
+                        несколько мягче, может, потому что новая. Старая резина ни разу не подвела, надеюсь, эта тоже не
+                        подведёт.</p>
+                    </div>
+                    <div class="comment__foot">
+                      <a href="#" class="comment__reply fcomment popup-button freply boxfade">Ответить</a>
+                      <span class="comment__rating">
+                        <span class="rating__mark"><a href="#" class="comment__like"></a>5</span>
+                        <span class="rating__mark"><a href="#" class="comment__dislike"></a>0</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="comment comment_answer">
+                    <div class="comment_main">
+                      <div class="comment__head">
+                        <span class="comment__author">Андрей Петренко</span>
+                        <span class="comment__date">10 февраля 2018</span>
+                      </div>
+                      <div class="comment__body">
+                        <p>На вид это та же резина, но мне показалась несколько мягче, может, потому что новая. Старая
+                          резина ни разу не подвела, надеюсь, эта тоже не подведёт. До этого использовал Nokian
+                          Hakkapeliitta R</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--**-->
+                <div class="comment">
+                  <div class="comment_main">
+                    <div class="comment__head">
+                      <span class="comment__author">Евгений Лазоренко</span>
+                      <span class="comment__date">9 февраля 2018</span>
+                    </div>
+                    <div class="comment__body">
+                      <p>До этого использовал Nokian Hakkapeliitta R. На вид это та же резина, но мне показалась
+                        несколько мягче, может, потому что новая. Старая резина ни разу не подвела, надеюсь, эта тоже не
+                        подведёт.</p>
+                    </div>
+                    <div class="comment__foot">
+                      <a href="#" class="comment__reply fcomment popup-button freply boxfade">Ответить</a>
+                      <span class="comment__rating">
+                        <span class="rating__mark"><a href="#" class="comment__like"></a>5</span>
+                        <span class="rating__mark"><a href="#" class="comment__dislike"></a>0</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="comment comment_answer">
+                    <div class="comment_main">
+                      <div class="comment__head">
+                        <span class="comment__author">Андрей Петренко</span>
+                        <span class="comment__date">10 февраля 2018</span>
+                      </div>
+                      <div class="comment__body">
+                        <p>На вид это та же резина, но мне показалась несколько мягче, может, потому что новая. Старая
+                          резина ни разу не подвела, надеюсь, эта тоже не подведёт. До этого использовал Nokian
+                          Hakkapeliitta R</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <i class="showmore-button showmore-comments">Показать все отзывы</i>
+            </div>
+            <!--/comments-->
+          </div>
+          <!--/tab 4-->
+          <!--tab 5-->
+          <div class="tab-content" id="video">
+            <span class="title_2">Видео обзор</span>
+            <p>Также клиент может заказать регулируемую винтовую подвеску (скорее всего, фирмы KW) с уменьшенным на 20
+              мм клиренсом и амортизаторами с независимой настройкой уровня сжатия и отбоя (12 и 16 положений
+              соответственно). И, конечно, не обошлось дело без доработок тормозной системы. Механизмы M Performance ―
+              это алюминиевые моноблочные суппорты с шестью поршнями спереди и четырьмя сзади. Диаметр вентилируемых
+              перфорированных дисков увеличен до 400 и 380 мм в зависимости от оси. Колодки с повышенной стойкостью к
+              перегреву заимствованы из автоспорта.</p>
+            <div class="video">
+              <iframe width="560" src="https://www.youtube.com/embed/PfPfRjYfVe0" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>Также клиент может заказать регулируемую винтовую подвеску (скорее всего, фирмы KW) с уменьшенным на 20
+              мм клиренсом и амортизаторами с независимой настройкой уровня сжатия и отбоя (12 и 16 положений
+              соответственно). И, конечно, не обошлось дело без доработок тормозной системы. Механизмы M Performance ―
+              это алюминиевые моноблочные суппорты с шестью поршнями спереди и четырьмя сзади. Диаметр вентилируемых
+              перфорированных дисков увеличен до 400 и 380 мм в зависимости от оси. Колодки с повышенной стойкостью к
+              перегреву заимствованы из автоспорта.</p>
+          </div>
+          <!--/tab 5-->
+        </div>
+      </div>
+      <div class="product-subcontent">
+        <div class="catalog-section prodpage">
+          <!--**-->
+          <span class="title_2">Рекомендуем <span class="normal">обратить внимание</span></span>
+          <!--**-->
+          <div class="catalog-carousel owl-carousel">
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/108375" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/topla_108375_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Topla Energy 75Ah 750A L+ 108375</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: 108375</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="4">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">2 865 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=2 865&name=Акумулятор Topla Energy 75Ah 750A L+ 108375&quantity=1&art=108375&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/118995" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/topla_118995_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Topla TOP JIS 95Ah 850A L+ 118995</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: 118995</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="4">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">3 431 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=3 431&name=Акумулятор Topla TOP JIS 95Ah 850A L+ 118995&quantity=1&art=118995&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/246895" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/tab_246895_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор TAB Polar JIS 95Ah 850A R+ 246895</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: 246895</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="4">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">3 375 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=3 375&name=Акумулятор TAB Polar JIS 95Ah 850A R+ 246895&quantity=1&art=246895&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/314070" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                      <i class="catalog-item__label label_sale" style="background-color: #04B4AE;">Start-stop AGM</i>
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/vesna_314070_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Vesna AGM Stop &amp; Go 70Ah 760A R+
+                            314070</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: 314070</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="3.5">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">57 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Vesna AGM Stop &amp; Go 70Ah 760A R+ 314070&quantity=1&art=314070&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/570413063" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/varta_570413063_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Varta Blue Dynamic 70Ah 630A L+ 570413063</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: 570413063</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="4.5">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">57 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Varta Blue Dynamic 70Ah 630A L+ 570413063&quantity=1&art=570413063&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/CA1050" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/noimage.jpg" alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Centra Futura 105Ah 850A R+ CA1050</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: CA1050</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="5">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">57 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Centra Futura 105Ah 850A R+ CA1050&quantity=1&art=CA1050&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/DA770" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/deta_DA770_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Deta Senator 3 77Ah 760A R+ DA770</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: DA770</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="5">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">3 358 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=3 358&name=Акумулятор Deta Senator 3 77Ah 760A R+ DA770&quantity=1&art=DA770&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/DL1050" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                      <i class="catalog-item__label label_sale" style="background-color: #FF8000;">Start-stop EFB</i>
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/deta_DL1050_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Deta Start-stop EFB 105Ah 950A R+ DL1050</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: DL1050</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="5">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">6 975 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=6 975&name=Акумулятор Deta Start-stop EFB 105Ah 950A R+ DL1050&quantity=1&art=DL1050&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/EA852" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/exide_EA852_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Exide Premium 85Ah 800A R+ EA852</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: EA852</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="5">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">3 511 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=3 511&name=Акумулятор Exide Premium 85Ah 800A R+ EA852&quantity=1&art=EA852&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+            <div class="catalog-item product-item">
+              <div class="catalog-item__inner">
+                <a href="/ua/product/27/TB457" target="_blank" class="catalog-item__link">
+                  <div class="catalog-item__labels">
+                    <div class="catalog-item__bank_textlabels">
+                    </div>
+                    <div class="catalog-item__bank_labels">
+                    </div>
+                  </div>
+
+                  <div class="catalog-item__weather_labels">
+                  </div>
+                  <div class="catalog-item__photo"><img src="http://akb911.in.ua/uploads/products/tudor_TB457_1.jpg"
+                      alt=""></div>
+                  <div class="block-images block-images-prodtitle info">
+                    <div class="block-images info-inner0">
+                      <div class="block-images info-inner">
+                        <div class="block-images info-inner1">
+                          <span class="catalog-item__title">Акумулятор Tudor Technica 45Ah 330A L+ TB457</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="catalog-item__number">Артикул: TB457</span>
+                </a>
+
+                <div class="product__reviews prodrev" data-rating="4">
+                  <div class="reviews__stars">
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                    <i class="star_icon star_empty"></i>
+                  </div>
+                </div>
+
+                <div class="catalog-item__prices">
+                  <span class="product__price price_old" style="opacity: 0;">&nbsp;</span>
+                  <span class="product__price">57 <span class="unit">грн.</span></span>
+                </div>
+                <span class="catalog-stock__status instock">
+                  <span class="storage__value">
+                    Є в наявності
+                  </span>
+                </span>
+
+                <a href="http://195.226.192.57:3333/order/product/add?partner=asva&store=27&price=57&name=Акумулятор Tudor Technica 45Ah 330A L+ TB457&quantity=1&art=TB457&back_to_shop=/ua/product/27/0092S40020"
+                  class="catalog-item__buy">Купить</a>
+
+                <!-- div class="block-images catalog-item__info  info">
+                            <div class="block-images info-inner0">
+                                <div class="block-images info-inner">
+                                    <div class="block-images info-inner1 spoiler-info" style="min-width: 100%;">
+                                        <a href="#" class="credit__link"><strong>Рассрочка от 425 грн/мес</strong></a>
+                                        <br>
+                                        <div class="catalog-item__bank_labels">
+                                            <i class="catalog-item__label label_privat"></i>
+                                            <i class="catalog-item__label label_mono"></i>
+                                            <i class="catalog-item__label label_alfa"></i>
+                                        </div>
+                                        <br>
+                                        <div class="country_year"><img src="/img/flag_tur.png" alt=""> Турция, 2020 год</div>
+                                        <div>&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div -->
+              </div>
+            </div>
+
+          </div>
+          <!--**-->
+        </div>
+      </div>
+
+      <script>
+        let orderLink = 'http://195.226.192.57:3333/order/product/add?partner=asva&price=57&name=Акумулятор Bosch S4 52Ah 470A R+ 0092S40020&quantity=1&art=0092S40020&store=27&back_to_shop=/ua/product/27/0092S40020';
+
+        function makeOrder() {
+          location.href = orderLink;
+        }
+
+        setTimeout(function () {
+          $(document).ready(function () {
+            const templateCreditLink = "http://credit.akb911.in.ua/?sum=";
+            const templateLinkOrder = 'http://195.226.192.57:3333/order/product/add?partner=asva&price=57&name=Акумулятор Bosch S4 52Ah 470A R+ 0092S40020&quantity=%QUANTITY%&art=0092S40020&store=27&back_to_shop=/ua/product/27/0092S40020';
+            const price = parseInt("57");
+            $(".quantity-form__input").change(function () {
+              const count = parseInt($(this).val());
+              $(".credit-button").attr('href', templateCreditLink + (count * price));
+              orderLink = templateLinkOrder.replace('%QUANTITY', count);
+            });
+          });
+        }, 2000);
+      </script>
+    </div>
+    <footer class="site-footer">
+      <div class="footer__about">
+        <div class="footer__logo"><a href="#"><img src="../../../img/logo_bot.jpg" alt=""></a></div>
+      </div>
+      <i class="footer__mob-nav"></i>
+      <div class="footer-nav">
+        <ul class="footer-nav__list">
+          <li><a href="../../../ua/article/pro_nas/">Про нас</a></li>
+          <li><a href="../../../ua/article/dostavka_i_oplata">Доставка і оплата</a></li>
+          <li><a href="../../../ua/article/harantiya/">Гарантія</a></li>
+          <li><a href="../../../ua/article/Umovy_obminu_ta_povernennya_tovaru/">Умови обміну та повернення товару</a>
+          </li>
+          <li><a href="../../../ua/article/dogovor_publichnoy_oferti/">Договір публічної оферти.</a></li>
+          <li><a href="../../../ua/article/servisnyy_tsentr">Сервісний центр</a></li>
+        </ul>
+      </div>
+      <div class="footer__time">
+        <span class="footer__title">График роботи:</span>
+        <p>Пн-Пт: 09:00 - 19:00</p>
+        <p>Сб: 10:00 - 17:00</p>
+        <p>Нд: 10:00 - 15:00 (попередньо дзвоніть)</p>
+      </div>
+      <!--***-->
+      <div class="footer__phones">
+        <span class="footer__title">Служба підтримки:</span>
+        <span class="phone"><a href="tel:(067) 830-30-73">(067) 830-30-73</a></span>
+        <span class="phone"><a href="tel:(095) 830-30-73">(095) 830-30-73</a></span>
+        <span class="phone"><a href="tel:(093) 830-30-73">(093) 830-30-73</a></span>
+      </div>
+      <!--***-->
+      <div class="footer__feedback">
+        <!--**-->
+        <a href="/ua/feedback" class="write-to-us" target="_blank">
+          <i class="write-to-us__ico"></i>Написати нам </a>
+        <!--**-->
+        <div class="footer__social">
+          <span class="footer__title">Ми в соцмережах:</span>
+          <a href="https://www.facebook.com/speedline.news" target="_blank" class="soc__link"><img
+              src="../../../img/fb-ico.svg" alt=""></a>
+          <a href="https://www.instagram.com/speedlineua/" target="_blank" class="soc__link"><img
+              src="../../../img/ig-ico.svg" alt=""></a>
+          <a href="https://www.youtube.com/channel/UCG4vJ4l2WU58YFmwaZQ-0iA" target="_blank" class="soc__link"><img
+              src="../../../img/yt-ico.svg" alt=""></a>
+        </div>
+        <!--**-->
+      </div>
+      <!--***-->
+    </footer>
+    <!--/FOOTER-->
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../../../js/jquery-ui.min.js"></script>
+  <!--<script src="/js/jquery.ui.touch-punch.min.js"></script>-->
+  <script src="../../../js/owl.carousel.min.js"></script>
+  <script src="../../../js/jquery.mcustomscrollbar.js"></script>
+  <script src="../../../js/remodal.min.js"></script>
+  <script src="../../../js/jquery.barrating.js"></script>
+  <script src="../../../js/jquery.pikachoose.min.js"></script>
+  <script src="../../../js/jquery.maskedinput.js"></script>
+  <script src="../../../js/jquery.fancybox.min.js"></script>
+  <script src="../../../js/functions.js"></script>
+  <script>
+    $('#formsearch').submit(function () {
+      $("body").append($("<div id='search-loader'></div>"));
+    });
+  </script>
+  <script src="../../../js/functions_cars_select.js"></script>
+</body>
+
+</html>

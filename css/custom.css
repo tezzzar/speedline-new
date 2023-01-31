@@ -45,10 +45,6 @@ input.search-form__input {
   width: 25%;
 }
 
-input.search-form__input {
-  width: 75%;
-}
-
 .nav__catalog {
   background: #e75325;
 }
@@ -128,10 +124,6 @@ input.search-form__input {
 .catalog-carousel .owl-next {
   border: 1px solid #e75325;
   background-color: #e75325;
-}
-
-input.search-form__input {
-  width: 100%;
 }
 
 .search-form .ui-selectmenu-button {
@@ -271,10 +263,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__logo {
-  background-image: url(../img/logo_bot.jpg);
+  background-image: url(../img/logo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 60px;
+  height: 90px;
 }
 
 .logo > a {
@@ -284,7 +276,8 @@ body::-webkit-scrollbar-thumb {
 .logo {
   background-image: url(../img/logo.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  top: 0px;
   height: 60px;
 }
 
@@ -395,10 +388,6 @@ html {
   border: 1px solid #b43103;
   background: #b43103;
 }
-.basket .search-form .ui-selectmenu-button {
-  visibility: hidden;
-  width: 25%;
-}
 .basket input.search-form__input {
   width: 75%;
 }
@@ -464,9 +453,6 @@ html {
 }
 .basket input.search-form__input {
   width: 100%;
-}
-.basket .search-form .ui-selectmenu-button {
-  display: none;
 }
 .basket .footer__phones {
   left: 20px;
@@ -3197,4 +3183,23 @@ html {
   .menu-ul li.li-switch-opened {
     background-color: #f3912d !important;
   }
+}
+input.search-form__input {
+  height: 43px;
+  display: block;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0px 45px 0px 15px;
+}
+
+.product__buy {
+  top: -3px;
+}
+
+.cars_select_button .button_text {
+  width: 99%;
+  margin-left: 5px;
 }/*# sourceMappingURL=custom.css.map */

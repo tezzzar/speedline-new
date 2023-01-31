@@ -46,9 +46,9 @@ input.search-form__input {
   width: 25%;
 }
 
-input.search-form__input {
-  width: 75%;
-}
+// input.search-form__input {
+//   width: 75%;
+// }
 
 .nav__catalog {
   background: #e75325;
@@ -132,9 +132,9 @@ input.search-form__input {
   background-color: #e75325;
 }
 
-input.search-form__input {
-  width: 100%;
-}
+// input.search-form__input {
+//   width: 100%;
+// }
 
 .search-form .ui-selectmenu-button {
   display: none;
@@ -285,10 +285,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__logo {
-  background-image: url(../img/logo_bot.jpg);
+  background-image: url(../img/logo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 60px;
+  height: 90px;
 }
 
 .logo > a {
@@ -297,7 +297,8 @@ body::-webkit-scrollbar-thumb {
 .logo {
   background-image: url(../img/logo.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  top: 0px;
   height: 60px;
 }
 
@@ -380,10 +381,10 @@ body::-webkit-scrollbar-thumb {
     background: #b43103;
   }
 
-  .search-form .ui-selectmenu-button {
-    visibility: hidden;
-    width: 25%;
-  }
+  // .search-form .ui-selectmenu-button {
+  //   visibility: hidden;
+  //   width: 25%;
+  // }
 
   input.search-form__input {
     width: 75%;
@@ -466,9 +467,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
 
-  .search-form .ui-selectmenu-button {
-    display: none;
-  }
+  // .search-form .ui-selectmenu-button {
+  //   display: none;
+  // }
 
   .footer__phones {
     left: 20px;
@@ -3596,4 +3597,24 @@ body::-webkit-scrollbar-thumb {
   .menu-ul li.li-switch-opened {
     background-color: #f3912d !important;
   }
+}
+
+input.search-form__input {
+  height: 43px;
+  display: block;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0px 45px 0px 15px;
+}
+
+.product__buy {
+  top: -3px;
+}
+
+.cars_select_button .button_text {
+  width: 99%;
+  margin-left: 5px;
 }
