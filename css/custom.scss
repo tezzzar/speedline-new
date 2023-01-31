@@ -3651,8 +3651,14 @@ input.search-form__input {
   padding: 20px;
   border: 1px solid grey;
   border-radius: 10px;
+  h3 {
+    font-size: small;
+  }
 }
 
 .show {
   display: block;
+}
+.btn-close {
+  margin-left: 240px;
 }

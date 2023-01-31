@@ -3235,7 +3235,14 @@ input.search-form__input {
   border: 1px solid grey;
   border-radius: 10px;
 }
+.modal-block h3 {
+  font-size: small;
+}
 
 .show {
   display: block;
+}
+
+.btn-close {
+  margin-left: 240px;
 }/*# sourceMappingURL=custom.css.map */
