@@ -285,6 +285,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url(../img/logo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  height: 60px;
 }
 
 .article-prw a {
