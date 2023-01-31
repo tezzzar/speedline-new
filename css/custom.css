@@ -298,6 +298,10 @@ body::-webkit-scrollbar-thumb {
   .footer__phones {
     left: 0px;
   }
+  body,
+html {
+    overflow-x: hidden;
+  }
 }
 .header-user,
 .header-compare {
@@ -3164,4 +3168,31 @@ body::-webkit-scrollbar-thumb {
 .basket .order-step__number,
 .basket .step__number {
   height: 19px;
+}
+
+.slideshow-banners {
+  margin: -41px 0px 0 -30px;
+}
+
+.cars_select_modal .cell_checkbox.size_3,
+.cars_select_modal .cell_checkbox.size_10 {
+  width: 100%;
+}
+
+.checkbox-button_brand .checkbox-button__text {
+  height: 30px;
+  text-align: left;
+  padding: 12px 0 0 0;
+  width: 100%;
+  display: block;
+}
+
+#slide_window .callback_close {
+  background: #000 !important;
+}
+
+@media (max-width: 1280px) {
+  .menu-ul li.li-switch-opened {
+    background-color: #f3912d !important;
+  }
 }/*# sourceMappingURL=custom.css.map */
