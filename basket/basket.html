@@ -286,31 +286,6 @@
               <div class="order-step">
                 <div class="order-step__header">
                   <span class="order-step__number">1</span>
-                  <span class="order-step__title">Способ оплаты</span>
-                </div>
-                <div class="order-step__content">
-                  <div class="form form_small">
-                    <div class="form__row">
-                      <input type="radio" class="form__radio" id="radio_pay_1" name="radio_pay" value="cash" />
-                      <label for="radio_pay_1" class="radio__label">Наличными</label>
-                    </div>
-                    <div class="form__row">
-                      <input type="radio" class="form__radio" id="radio_pay_2" name="radio_pay" value="bank" />
-                      <label for="radio_pay_2" class="radio__label">Оплата картой</label>
-                    </div>
-                    <div class="form__row">
-                      <input type="radio" class="form__radio" id="radio_pay_3" name="radio_pay" value="credit" />
-                      <label for="radio_pay_3" class="radio__label">Кредит</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!--/order step 1-->
-              <!--order step 2-->
-              <div class="order-step">
-                <div class="order-step__header">
-                  <span class="order-step__number">2</span>
                   <span class="order-step__title">Способ доставки</span>
                 </div>
                 <div class="order-step__content">
@@ -349,6 +324,31 @@
                 </div>
               </div>
 
+              <!--/order step 1-->
+              <!--order step 2-->
+
+              <div class="order-step">
+                <div class="order-step__header">
+                  <span class="order-step__number">2</span>
+                  <span class="order-step__title">Способ оплаты</span>
+                </div>
+                <div class="order-step__content">
+                  <div class="form form_small">
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_1" name="radio_pay" value="cash" />
+                      <label for="radio_pay_1" class="radio__label">Наличными</label>
+                    </div>
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_2" name="radio_pay" value="bank" />
+                      <label for="radio_pay_2" class="radio__label">Оплата картой</label>
+                    </div>
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_3" name="radio_pay" value="credit" />
+                      <label for="radio_pay_3" class="radio__label">Кредит</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!--/order step 2-->
               <!--order step 3-->
               <div class="order-step">
@@ -925,12 +925,354 @@
     <div class="modal-block">
       <form action="">
         <div class="btn-close">X</div>
-        <h3>Для отримання кредиту надайте ІПН та електронну адресу</h3>
-        <div class="form-field">
-          <input type="number" placeholder="індивідуальний податковий номер">
+        <div class="wrapper">
+
+
+
+          <!--MIDDLE-->
+          <div class="site-content">
+            <form id="order-form" action="/" method="get">
+
+              <!--***-->
+              <div class="calculator calculator_credit fixed">
+                <div class="calculator__form">
+                  <div class="form__row">
+                    <div class="row__cols">
+                      <div class="form__col col_2">
+                        <span class="form__label">Повна вартість обраних товарів:</span>
+                        <div class="form__cell cell_credit-price">
+                          <input type="text" name="sum" class="form__input" value="1275">
+                          <span class="credit-price__unit">грн.</span>
+                          <button id="sum_button" class="form__button sum_button">Ок</button>
+                        </div>
+                      </div>
+                      <div class="form__col col_2">
+                        <span class="form__label">Строк кредиту:</span>
+                        <div class="form__cell cell_slider">
+                          <input type="text" name="period" value="3" id="input-terms" class="slider__input" readonly="">
+                          <i class="slider__unit">місяців</i>
+                          <div id="slider-terms"
+                            class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                            <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min"
+                              style="width: 9.09091%;"></div><span tabindex="0"
+                              class="ui-slider-handle ui-corner-all ui-state-default" style="left: 9.09091%;"></span>
+                          </div>
+                          <div class="slider__ruler ruler_items-12">
+                            <span class="ruler__item ruler__item_3">3</span>
+                            <span class="ruler__item ruler__item_6">6</span>
+                            <span class="ruler__item">9</span>
+                            <span class="ruler__item">12</span>
+                            <span class="ruler__item">15</span>
+                            <span class="ruler__item">18</span>
+                            <span class="ruler__item">21</span>
+                            <span class="ruler__item">24</span>
+                            <span class="ruler__item">27</span>
+                            <span class="ruler__item ruler__item_30">30</span>
+                            <span class="ruler__item ruler__item_33">33</span>
+                            <span class="ruler__item">36</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--***-->
+              <!-- div class="credits-banner">
+              <a href="#" class="credit-banner"><img src="img/banner.jpg" alt=""></a>
+            </div-->
+              <input type="hidden" name="bank">
+              <!--***-->
+              <div class="credits-result calc-fixed">
+                <table class="table table_credits">
+
+                  <tbody>
+                    <tr>
+                      <td colspan="5" class="credit-td__title">
+                        <strong>Покупка частинами на 4 платежі</strong>
+                      </td>
+                    </tr>
+                    <tr class="bank_mono">
+                      <td class="credit-td__logo">
+                        <img src="https://speed-line.com.ua/uploads/bank/phpqcXrZF" alt="">
+                      </td>
+                      <td class="credit-td__conditions">
+                        <ul>
+                          <li><strong>Покупка частинами - безкоштовна розстрочка, яка дозволяє розбити покупку на 4
+                              платежі.</strong></li>
+                          <li>Щоб користуватися покупкою частинами необхідно бути клієнтом Монобанку, якщо ви не є
+                            клієнтом, то можна оформити картку перейшовши <a href="https://www.monobank.ua/">за
+                              посиланням</a>.</li>
+                          <li>Дізнайтеся свій ліміт на Покупки частинами</li>
+                          <li>Купуйте частинами автомобільні товари в нашому магазині.</li>
+                        </ul>
+                      </td>
+                      <td class="credit-td__term">
+                        <span class="credit__term">
+                          <span class="number_pay">3</span>
+                          <span class="unit">міс.</span>
+                        </span>
+                        <br>3 або 4 платежі
+                      </td>
+                      <td class="credit-td__price"><span class="credit__price">425.00</span>
+                        <br>грн/платіж*.
+                      </td>
+                      <td class="credit-td__button">
+                        <input type="submit" data-bank="mono" class="button" value="подати заявку">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="4">
+                        <div class="credit-info">
+                          <div class="credit-info__item">
+                            <a class="credit-info__link">Детальніше</a>
+                            <div class="credit-info__text">
+                              <p>Розрахунок приблизний, носить інформаційний характер і побудований з розрахунку, що
+                                клієнт здійснює транзакцію в кредит в торговельній точці.<br>
+                                Мінімальна сума кредиту - 500 грн.<br>
+                                Максимальна сума кредиту - 200 000 грн.<br>
+                                Мінімальний строк кредиту - 2 міс.<br>
+                                Максимальний строк кредиту - 3 міс.</p>
+                            </div>
+                          </div>
+                          <!-- div class="credit-info__item">
+                                              <a class="credit-info__link">Як оформити</a>
+                                              <div class="credit-info__text">
+                                                  <p>Розрахунок приблизний, носить інформаційний характер і побудований з розрахунку, що клієнт здійснює транзакцію в кредит в торговельній точці.<br />
+          Мінімальна сума кредиту - 500 грн.<br />
+          Максимальна сума кредиту - 200 000 грн.<br />
+          Мінімальний строк кредиту - 2 міс.<br />
+          Максимальний строк кредиту - 3 міс.</p>
+                                              </div>
+                                          </div -->
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="credit-td__title">
+                        <strong>Сплачуйте частинами.</strong>
+                      </td>
+                    </tr>
+                    <tr class="bank_pumb3">
+                      <td class="credit-td__logo">
+                        <img src="https://speed-line.com.ua/uploads/bank/php656NjM" alt="">
+                      </td>
+                      <td class="credit-td__conditions">
+                        <ul>
+                          <li><strong><span dir="ltr">Для діючих клієнтів ПУМБ :</span></strong></li>
+                          <li><span dir="ltr">мати доступ до встановленого застосунку ПУМБ Online</span></li>
+                          <li><span dir="ltr">при купівлі використовувати номер мобільного телефону, який зареєстрований
+                              у ПУМБ</span></li>
+                          <li><strong><span dir="ltr">Для нових клієнтів:</span></strong></li>
+                          <li><span dir="ltr">мати документи у ДІЯ (id</span>-<span dir="ltr">картка або закордонний
+                              паспорт та РНОКПП) та здійснити реєстрацію у застосунку ПУМБ Online під час оформлення
+                              Сплачуйте частинами.</span></li>
+                        </ul>
+                      </td>
+                      <td class="credit-td__term">
+                        <span class="credit__term">
+                          <span class="number_pay">3</span>
+                          <span class="unit">міс.</span>
+                        </span>
+                        <br>3 або 4 платежі
+                      </td>
+                      <td class="credit-td__price"><span class="credit__price">425.00</span>
+                        <br>грн/платіж*.
+                      </td>
+                      <td class="credit-td__button">
+                        <input type="submit" data-bank="pumb3" class="button" value="подати заявку">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="4">
+                        <div class="credit-info">
+                          <div class="credit-info__item">
+                            <a class="credit-info__link">Детальніше</a>
+                            <div class="credit-info__text">
+                              <p><span style="font-size:11pt"><span style="font-family:Arial,sans-serif"><strong><span
+                                        dir="ltr" lang="UK" style="font-size:10.0pt"><span
+                                          style="font-family:&quot;Gilroy Medium&quot;"><span
+                                            style="color:#404040">Переваги
+                                            продукту:</span></span></span></strong></span></span><em><span
+                                    style="font-size:11pt"><span style="font-family:Arial,sans-serif"><strong><span
+                                          dir="ltr" lang="UK" style="font-size:10.0pt"><span
+                                            style="font-family:&quot;Gilroy Medium&quot;"><span style="color:#404040">
+                                            </span></span></span></strong></span></span></em></p>
+
+                              <ul>
+                                <li><em><span style="font-size:11pt"><span
+                                        style="font-family:Arial,sans-serif"><strong><span dir="ltr" lang="UK"
+                                            style="font-size:10.0pt"><span
+                                              style="font-family:&quot;Calibri&quot;,sans-serif"><span
+                                                style="color:#404040">Оформлюємо усім:
+                                              </span></span></span></strong><span dir="ltr" lang="UK"
+                                          style="font-size:10.0pt"><span
+                                            style="font-family:&quot;Calibri&quot;,sans-serif"><span
+                                              style="color:#404040">Навіть, якщо ви ще не клієнт ПУМБ, ви можете
+                                              отримати свою розстрочку в ПУМБ!</span></span></span></span></span></em>
+                                </li>
+                                <li><span style="font-size:11pt"><span
+                                      style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK"
+                                          style="font-size:10.0pt"><span style="color:#404040">Розстрочка у смартфоні:
+                                          </span></span></strong><span dir="ltr" lang="UK"
+                                        style="font-size:10.0pt"><span style="color:#404040">Не потрібно йти у банк -
+                                          оформлення у застосунку ПУМБ Online</span></span></span></span></li>
+                                <li><em><span style="font-size:11pt"><span
+                                        style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK"
+                                            style="font-size:10.0pt"><span style="color:#404040">Без платежу у день
+                                              купівлі: </span></span></strong><span dir="ltr" lang="UK"
+                                          style="font-size:10.0pt"><span style="color:#404040">Жодних платежів при
+                                            оформленні. Сплачуйте перший платіж тільки через
+                                            місяць</span></span></span></span></em></li>
+                                <li><em><span style="font-size:11pt"><span
+                                        style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK"
+                                            style="font-size:10.0pt"><span style="color:#404040">Без кредитної картки:
+                                            </span></span></strong><span dir="ltr" lang="UK"
+                                          style="font-size:10.0pt"><span style="color:#404040">Не потрібно мати кредитну
+                                            картку. Якщо кредитка вже є, то з неї не будуть списуватися
+                                            платежі</span></span></span></span></em></li>
+                                <li><em><span style="font-size:11pt"><span
+                                        style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK"
+                                            style="font-size:10.0pt"><span style="color:#404040">Збільшення терміну
+                                              розстрочки: </span></span></strong><span dir="ltr" lang="UK"
+                                          style="font-size:10.0pt"><span style="color:#404040">Є можливість у додатку
+                                            ПУМБ online при оформленні збільшити строк на 3 місяці - це зменшить
+                                            щомісячний платіж</span></span></span></span></em></li>
+                                <li><em><span style="font-size:11pt"><span
+                                        style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK"
+                                            style="font-size:10.0pt"><span style="color:#404040">Зручно сплачувати
+                                              :</span></span></strong><span dir="ltr" lang="UK"
+                                          style="font-size:10.0pt"><span style="color:#404040">Картою будь-якого банку у
+                                            мобільному застосунку або готівкою у відділеннях та терміналах
+                                            самообслуговування ПУМБ, IBOX, EasyPay, City24, Globalmoney,
+                                            Sistema</span></span></span></span></em></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- div class="credit-info__item">
+                                              <a class="credit-info__link">Як оформити</a>
+                                              <div class="credit-info__text">
+                                                  <p><span style="font-size:11pt"><span style="font-family:Arial,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="font-family:&quot;Gilroy Medium&quot;"><span style="color:#404040">Переваги продукту:</span></span></span></strong></span></span><em><span style="font-size:11pt"><span style="font-family:Arial,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="font-family:&quot;Gilroy Medium&quot;"><span style="color:#404040"> </span></span></span></strong></span></span></em></p>
+          
+          <ul>
+            <li><em><span style="font-size:11pt"><span style="font-family:Arial,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#404040">Оформлюємо усім: </span></span></span></strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#404040">Навіть, якщо ви ще не клієнт ПУМБ, ви можете отримати свою розстрочку в ПУМБ!</span></span></span></span></span></em></li>
+            <li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Розстрочка у смартфоні: </span></span></strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Не потрібно йти у банк - оформлення у застосунку ПУМБ Online</span></span></span></span></li>
+            <li><em><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Без платежу у день купівлі: </span></span></strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Жодних платежів при оформленні. Сплачуйте перший платіж тільки через місяць</span></span></span></span></em></li>
+            <li><em><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Без кредитної картки: </span></span></strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Не потрібно мати кредитну картку. Якщо кредитка вже є, то з неї не будуть списуватися платежі</span></span></span></span></em></li>
+            <li><em><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Збільшення терміну розстрочки: </span></span></strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Є можливість у додатку ПУМБ online при оформленні збільшити строк на 3 місяці - це зменшить щомісячний платіж</span></span></span></span></em></li>
+            <li><em><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Зручно сплачувати :</span></span></strong><span dir="ltr" lang="UK" style="font-size:10.0pt"><span style="color:#404040">Картою будь-якого банку у мобільному застосунку або готівкою у відділеннях та терміналах самообслуговування ПУМБ, IBOX, EasyPay, City24, Globalmoney, Sistema</span></span></span></span></em></li>
+          </ul>
+                                              </div>
+                                          </div -->
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="credit-td__title">
+                        <strong>Online Розстрочка</strong>
+                      </td>
+                    </tr>
+                    <tr class="bank_pay_later">
+                      <td class="credit-td__logo">
+                        <img src="https://speed-line.com.ua/uploads/bank/phplkQypz" alt="">
+                      </td>
+                      <td class="credit-td__conditions">
+                        <ul>
+                          <li><strong>Ніяких паперів і походів в банки&nbsp;- Ви просто залишаєте заявку на сайті та
+                              підписуєте електронний договір в онлайн-кабінеті;</strong></li>
+                          <li>Без додаткових/скритих платежів та страхування&nbsp;- Щомісячний платіж&nbsp;вже включає
+                            плату за розстрочку;</li>
+                          <li>Перший платіж ви оплачуєте до відвантаження товару</li>
+                        </ul>
+                      </td>
+                      <td class="credit-td__term">
+                        <span class="credit__term">
+                          <span class="number_pay">3</span>
+                          <span class="unit">міс.</span>
+                        </span>
+                        <br>3, 6, 10.
+                      </td>
+                      <td class="credit-td__price"><span class="credit__price">462.00</span>
+                        <br>грн/платіж*.
+                      </td>
+                      <td class="credit-td__button">
+                        <input type="submit" data-bank="pay_later" class="button" value="подати заявку">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="4">
+                        <div class="credit-info">
+                          <div class="credit-info__item">
+                            <a class="credit-info__link">Детальніше</a>
+                            <div class="credit-info__text">
+                              <ol>
+                                <li>
+                                  <p><strong>Як оформити товар в розстрочку онлайн:</strong></p>
+                                </li>
+                                <li>Виберіть на сайті товар, натисніть на кнопку «Купить в кредит», підберіть зручний
+                                  щомісячний платіж і заповніть анкету.</li>
+                                <li>Заповнюйте кілька полей і натисніть&nbsp;«Продовжити».</li>
+                                <li>Ви отримаєте&nbsp;електронне повідомлення на пошту з інструкціями, а в разі
+                                  прийняття позитивного рішення&nbsp; - смс з даними для підписання електронного
+                                  договору розстрочки. Далі Ви оплачуєте авансовий платіж у відповідно до умов
+                                  вибраної&nbsp;вамі розстрочки&nbsp;та отримуєте товар;</li>
+                                <li>Щомісячні платежі Ви виплачуєте рівними частинами&nbsp;за реквізитами і в термін,
+                                  вказаний в угоді. Оплату можно проводити&nbsp;через веб-сайт, кабінет, а також через
+                                  термінали ПриватБанка або системи Приват24. Стан оплати можна перевірити у особтстому
+                                  кабінеті.</li>
+                                <li>Контактні телефони Процессінг-центральні послуги: (067) 235-92-18, (050) 416-32-30
+                                </li>
+                              </ol>
+                            </div>
+                          </div>
+                          <!-- div class="credit-info__item">
+                                              <a class="credit-info__link">Як оформити</a>
+                                              <div class="credit-info__text">
+                                                  <ol>
+            <li>
+            <p><strong>Як оформити товар в розстрочку онлайн:</strong></p>
+            </li>
+            <li>Виберіть на сайті товар, натисніть на кнопку &laquo;Купить в кредит&raquo;, підберіть зручний щомісячний платіж і заповніть анкету.</li>
+            <li>Заповнюйте кілька полей і натисніть&nbsp;&laquo;Продовжити&raquo;.</li>
+            <li>Ви отримаєте&nbsp;електронне повідомлення на пошту з інструкціями, а в разі прийняття позитивного рішення&nbsp; - смс з даними для підписання електронного договору розстрочки. Далі Ви оплачуєте авансовий платіж у відповідно до умов вибраної&nbsp;вамі розстрочки&nbsp;та отримуєте товар;</li>
+            <li>Щомісячні платежі Ви виплачуєте рівними частинами&nbsp;за реквізитами і в термін, вказаний в угоді. Оплату можно проводити&nbsp;через веб-сайт, кабінет, а також через термінали ПриватБанка або системи Приват24. Стан оплати можна перевірити у особтстому кабінеті.</li>
+            <li>Контактні телефони Процессінг-центральні послуги: (067) 235-92-18, (050) 416-32-30</li>
+          </ol>
+                                              </div>
+                                          </div -->
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="note-star">* <i>Розмiр платежу є орiентовним. Остаточний розмiр платежу уточнюйте у фiнансової
+                    установи, яка видаватиме кредит.</i></p>
+
+              </div>
+              <input type="hidden" name="refOrder" value="" readonly="">
+              <input type="hidden" name="partner" value="" readonly="">
+              <input type="hidden" name="details"
+                value="{&quot;name&quot;:&quot;165\/60 R15 Tigar Prima 77H&quot;,&quot;quantity&quot;:&quot;1&quot;,&quot;art&quot;:&quot;878616&quot;}"
+                readonly="">
+              <input type="hidden" name="name" value="" readonly="">
+              <input type="hidden" name="surname" value="" readonly="">
+              <input type="hidden" name="midlename" value="" readonly="">
+              <input type="hidden" name="phone" value="" readonly="">
+              <input type="hidden" name="email" value="" readonly="">
+              <input type="hidden" name="city" value="" readonly="">
+            </form>
+
+          </div>
+          <!--/MIDDLE-->
+
+          <!--FOOTER-->
+
+          <!--/FOOTER-->
+
         </div>
-        <div class="form-field"><input type="email" placeholder="електронна адреса"></div>
-        <button>Відправити</button>
       </form>
     </div>
   </div>
@@ -977,6 +1319,7 @@
 
     let modal = document.querySelector(".modal");
     let closeBtn = document.querySelector(".btn-close");
+    let modalHeader = document.querySelector(".site-header");
 
     function openModal() {
       modal.classList.add("show");
@@ -989,10 +1332,19 @@
     }
 
     // cardBtn.forEach((item) => {
-    cardBtn.addEventListener("click", openModal);
+    cardBtn.addEventListener("click", () => {
+      openModal();
+      modalHeader.style.display = "none";
+    })
+
+
+    // modalHeader.style.display = "none";
     // });
 
-    closeBtn.addEventListener("click", closeModal);
+    closeBtn.addEventListener("click", () => {
+      closeModal();
+      modalHeader.style.display = "block";
+    })
 
     modal.addEventListener("click", function (e) {
       if (e.target === modal) {
@@ -1000,7 +1352,7 @@
       }
     });
 
-    console.log(`cardBtn`);
+    // console.log(`cardBtn`);
   </script>
 
 
