@@ -765,6 +765,7 @@ html {
 .basket .sub-form {
   padding: 0 0 0 30px;
   margin: 10px 0 0 0;
+  width: 50%;
 }
 .basket .sub-form .form__select,
 .basket .sub-form .form__input {
