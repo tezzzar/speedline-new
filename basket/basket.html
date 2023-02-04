@@ -1351,13 +1351,14 @@
     let modalNova = document.querySelector(".sub-form-nova");
 
     function openForm() {
-      // modalDelivery.classList.remove("hidden");
-      // modalDelivery.classList.add("show");
-      modalDelivery.style.display = "block";
-      modalNova.style.display = "block";
-      // modal.classList.remove("hide");
+      modalDelivery.classList.add("show");
+      modalDelivery.classList.remove("hide");
+      modalNova.classList.add("show");
+      modalNova.classList.remove("hide");
+
     }
-    modalDelivery.addEventListener("click", openForm)
+    // modalDelivery.addEventListener("click", openForm)
+    // modalNova.addEventListener("click", openForm)
 
 
     console.log(modalDelivery);

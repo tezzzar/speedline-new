@@ -3636,6 +3636,7 @@ input.search-form__input {
 }
 
 .modal {
+  overflow: scroll;
   display: none;
   position: fixed;
   top: 0;
