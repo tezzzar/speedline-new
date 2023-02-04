@@ -295,7 +295,7 @@
                         <input type="radio" class="form__radio radio_delivery" id="radio_delivery_1"
                           name="radio_delivery" value="pickup">
                         <label for="radio_delivery_1" class="radio__label">Самовывоз</label>
-                        <div class="sub-form-pickup sub-form hidden">
+                        <div class="sub-form-pickup sub-form hide">
                           <select class="form__select" id="ui-id-1" name="value_delivery[pickup]"
                             style="display: none;">
                             <option disabled selected>Выбирете магазин</option>
@@ -311,7 +311,7 @@
                         <input type="radio" class="form__radio radio_delivery" id="radio_delivery_2"
                           name="radio_delivery" value="nova">
                         <label for="radio_delivery_2" class="radio__label">Отд.новой почты</label>
-                        <div class="sub-form-nova sub-form hidden">
+                        <div class="sub-form-nova sub-form hide">
                           <input type="text" class="form__input" name="city_nova" placeholder="Адрес">
                           <div><br></div>
                           <select class="form__select" id="ui-id-3" name="value_delivery[nova]" style="display: none;">
@@ -1316,7 +1316,6 @@
   <!-- POP UP -->
   <script>
     let cardBtn = document.getElementById("radio_pay_3");
-
     let modal = document.querySelector(".modal");
     let closeBtn = document.querySelector(".btn-close");
     let modalHeader = document.querySelector(".site-header");
@@ -1331,15 +1330,10 @@
       modal.classList.remove("show");
     }
 
-    // cardBtn.forEach((item) => {
     cardBtn.addEventListener("click", () => {
       openModal();
       modalHeader.style.display = "none";
     })
-
-
-    // modalHeader.style.display = "none";
-    // });
 
     closeBtn.addEventListener("click", () => {
       closeModal();
@@ -1349,10 +1343,24 @@
     modal.addEventListener("click", function (e) {
       if (e.target === modal) {
         closeModal();
+        modalHeader.style.display = "block";
       }
-    });
+    })
 
-    // console.log(`cardBtn`);
+    let modalDelivery = document.querySelector(".sub-form-pickup");
+    let modalNova = document.querySelector(".sub-form-nova");
+
+    function openForm() {
+      modalDelivery.classList.remove("hidden");
+      // modalDelivery.classList.add("show");
+      // modalDelivery.classList.remove("hide");
+      // modal.classList.remove("hide");
+    }
+    modalDelivery.addEventListener("click", openForm)
+
+
+    console.log(modalDelivery);
+    console.log(modalNova);
   </script>
 
 

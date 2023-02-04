@@ -494,7 +494,7 @@ html {
   line-height: 56px;
 }
 .basket .logo {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../img/logo.jpg);
   width: 199px;
@@ -503,9 +503,11 @@ html {
 .basket .logo a {
   display: block;
   line-height: 56px;
+  height: inherit;
 }
 .basket .logo img {
   opacity: 0;
+  height: inherit;
 }
 .basket a {
   color: #e75329;
@@ -3227,10 +3229,13 @@ input.search-form__input {
 }
 
 .modal-block {
+  height: auto;
   background-color: white;
   padding: 20px;
   border: 1px solid grey;
   border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
 }
 .modal-block h3 {
   font-size: small;
@@ -3241,6 +3246,7 @@ input.search-form__input {
 }
 
 .btn-close {
-  margin-left: 240px;
+  margin-left: 99%;
   cursor: pointer;
+  font-size: x-large;
 }/*# sourceMappingURL=custom.css.map */
