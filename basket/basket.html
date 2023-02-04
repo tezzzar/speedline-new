@@ -286,6 +286,74 @@
               <div class="order-step">
                 <div class="order-step__header">
                   <span class="order-step__number">1</span>
+                  <span class="order-step__title">Способ оплаты</span>
+                </div>
+                <div class="order-step__content">
+                  <div class="form form_small">
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_1" name="radio_pay" value="cash" />
+                      <label for="radio_pay_1" class="radio__label">Наличными</label>
+                    </div>
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_2" name="radio_pay" value="bank" />
+                      <label for="radio_pay_2" class="radio__label">Оплата картой</label>
+                    </div>
+                    <div class="form__row">
+                      <input type="radio" class="form__radio" id="radio_pay_3" name="radio_pay" value="credit" />
+                      <label for="radio_pay_3" class="radio__label">Кредит</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--/order step 1-->
+              <!--order step 2-->
+              <div class="order-step">
+                <div class="order-step__header">
+                  <span class="order-step__number">2</span>
+                  <span class="order-step__title">Способ доставки</span>
+                </div>
+                <div class="order-step__content">
+                  <div class="order-step__content">
+                    <div class="form form_small">
+                      <div class="form__row">
+                        <input type="radio" class="form__radio radio_delivery" id="radio_delivery_1"
+                          name="radio_delivery" value="pickup">
+                        <label for="radio_delivery_1" class="radio__label">Самовывоз</label>
+                        <div class="sub-form-pickup sub-form hidden">
+                          <select class="form__select" id="ui-id-1" name="value_delivery[pickup]"
+                            style="display: none;">
+                            <option disabled selected>Выбирете магазин</option>
+                            <option>Київ, вул. Ушинського 16 (Автозапчастини)</option>
+                            <option>Київ, вул. Лебединська 12 (ШИНИ)</option>
+                            <option>Київ, вул. Новопирогівська 56 (ШИНИ)</option>
+                            <option>Київ, вул. Стеценко 30 (ШИНИ)</option>
+                            <option>Київ, Павла Усенко 7/9 (ШИНИ)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form__row">
+                        <input type="radio" class="form__radio radio_delivery" id="radio_delivery_2"
+                          name="radio_delivery" value="nova">
+                        <label for="radio_delivery_2" class="radio__label">Отд.новой почты</label>
+                        <div class="sub-form-nova sub-form hidden">
+                          <input type="text" class="form__input" name="city_nova" placeholder="Адрес">
+                          <div><br></div>
+                          <select class="form__select" id="ui-id-3" name="value_delivery[nova]" style="display: none;">
+                            <option disabled selected>Выбирете отделение</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--/order step 2-->
+              <!--order step 3-->
+              <div class="order-step">
+                <div class="order-step__header">
+                  <span class="order-step__number">3</span>
                   <span class="order-step__title">Личная информация</span>
                 </div>
                 <div class="order-step__content">
@@ -328,72 +396,7 @@
                   </div>
                 </div>
               </div>
-              <!--/order step 1-->
-              <!--order step 2-->
-              <div class="order-step">
-                <div class="order-step__header">
-                  <span class="order-step__number">2</span>
-                  <span class="order-step__title">Способ оплаты</span>
-                </div>
-                <div class="order-step__content">
-                  <div class="form form_small">
-                    <div class="form__row">
-                      <input type="radio" class="form__radio" id="radio_pay_1" name="radio_pay" value="cash" />
-                      <label for="radio_pay_1" class="radio__label">Наличными</label>
-                    </div>
-                    <div class="form__row">
-                      <input type="radio" class="form__radio" id="radio_pay_2" name="radio_pay" value="bank" />
-                      <label for="radio_pay_2" class="radio__label">Оплата картой</label>
-                    </div>
-                    <div class="form__row">
-                      <input type="radio" class="form__radio" id="radio_pay_3" name="radio_pay" value="credit" />
-                      <label for="radio_pay_3" class="radio__label">Кредит</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--/order step 2-->
-              <!--order step 3-->
-              <div class="order-step">
-                <div class="order-step__header">
-                  <span class="order-step__number">3</span>
-                  <span class="order-step__title">Способ доставки</span>
-                </div>
-                <div class="order-step__content">
-                  <div class="order-step__content">
-                    <div class="form form_small">
-                      <div class="form__row">
-                        <input type="radio" class="form__radio radio_delivery" id="radio_delivery_1"
-                          name="radio_delivery" value="pickup">
-                        <label for="radio_delivery_1" class="radio__label">Самовывоз</label>
-                        <div class="sub-form-pickup sub-form hidden">
-                          <select class="form__select" id="ui-id-1" name="value_delivery[pickup]"
-                            style="display: none;">
-                            <option disabled selected>Выбирете магазин</option>
-                            <option>Київ, вул. Ушинського 16 (Автозапчастини)</option>
-                            <option>Київ, вул. Лебединська 12 (ШИНИ)</option>
-                            <option>Київ, вул. Новопирогівська 56 (ШИНИ)</option>
-                            <option>Київ, вул. Стеценко 30 (ШИНИ)</option>
-                            <option>Київ, Павла Усенко 7/9 (ШИНИ)</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form__row">
-                        <input type="radio" class="form__radio radio_delivery" id="radio_delivery_2"
-                          name="radio_delivery" value="nova">
-                        <label for="radio_delivery_2" class="radio__label">Отд.новой почты</label>
-                        <div class="sub-form-nova sub-form hidden">
-                          <input type="text" class="form__input" name="city_nova" placeholder="Адрес">
-                          <div><br></div>
-                          <select class="form__select" id="ui-id-3" name="value_delivery[nova]" style="display: none;">
-                            <option disabled selected>Выбирете отделение</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
               <!--/order step 3-->
             </div>
             <!--/order steps-->
@@ -931,6 +934,8 @@
       </form>
     </div>
   </div>
+
+
   <div class="remodal" data-remodal-id="modal-1">
     <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
     <div class="modal-header">
@@ -997,6 +1002,7 @@
 
     console.log(`cardBtn`);
   </script>
+
 
 
   <!--***-->
