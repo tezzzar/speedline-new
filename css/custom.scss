@@ -221,7 +221,7 @@ input.search-form__input {
   /* background: rgb(231, 83, 41);
   background: -moz-linear-gradient(0deg, rgba(231, 83, 41, 1) 15%, rgba(0, 0, 0, 1) 15%);
   background: -webkit-linear-gradient(0deg, rgba(231, 83, 41, 1) 15%, rgba(0, 0, 0, 1) 15%); */
-  background: url(../img/logo_small.png) no-repeat,
+  background: url(../img_custom/logo_small.png) no-repeat,
     linear-gradient(1deg, rgba(231, 83, 41, 1) 85%, rgba(0, 0, 0, 1) 85%) !important;
   /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e75329", endColorstr="#000000", GradientType=1); */
 }
@@ -240,11 +240,11 @@ input.search-form__input {
 .footer__time .footer__title:first-child:before,
 .footer__title:before {
   background-size: cover;
-  background-image: url(../img/time-circle-ico.png);
+  background-image: url(../img_custom/time-circle-ico.png);
 }
 
 .footer__phones .footer__title:before {
-  background-image: url(../img/phone-circle-ico.png);
+  background-image: url(../img_custom/phone-circle-ico.png);
 }
 
 .footer__phones {
@@ -265,7 +265,7 @@ input.search-form__input {
 }
 
 .write-to-us__ico {
-  background: url(../img/mail-ico.png) center center no-repeat;
+  background: url(../img_custom/mail-ico.png) center center no-repeat;
 }
 
 body::-webkit-scrollbar-track {
@@ -285,7 +285,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__logo {
-  background-image: url(../img/logo.jpg);
+  background-image: url(../img_custom/logo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 90px;
@@ -295,7 +295,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0;
 }
 .logo {
-  background-image: url(../img/logo.jpg);
+  background-image: url(../img_custom/logo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   top: 0px;
@@ -342,7 +342,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .open__ico.filterget {
-  background: url(../img/filter.png) center center no-repeat;
+  background: url(../img_custom/filter.png) center center no-repeat;
 }
 
 .form__button,
@@ -484,24 +484,24 @@ body::-webkit-scrollbar-thumb {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/time-circle-ico.png);
+    background-image: url(../img_custom/time-circle-ico.png);
   }
 
   .footer__phones .footer__title:before {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/phone-circle-ico.png);
+    background-image: url(../img_custom/phone-circle-ico.png);
   }
 
   .write-to-us__ico {
-    background: url(../img/mail-ico.png) center center no-repeat;
+    background: url(../img_custom/mail-ico.png) center center no-repeat;
   }
 
   .footer__logo {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/logo_bot.jpg);
+    background-image: url(../img_custom/logo_bot.jpg);
     width: 199px;
     height: 56px;
   }
@@ -520,7 +520,7 @@ body::-webkit-scrollbar-thumb {
   .logo {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/logo.jpg);
+    background-image: url(../img_custom/logo.jpg);
     width: 199px;
     height: 56px;
   }
@@ -993,7 +993,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   input[type="checkbox"]:checked + .checkbox__label:before {
-    background: url(../img/checked.png) center center no-repeat;
+    background: url(../img_custom/checked.png) center center no-repeat;
     background-size: 18px;
   }
 
@@ -1004,7 +1004,7 @@ body::-webkit-scrollbar-thumb {
 
   input[type="checkbox"]:checked + .checkbox__label.checkbox_small:before,
   input[type="radio"]:checked + .checkbox__label.checkbox_small:before {
-    background: url(../img/checked.png) center center no-repeat;
+    background: url(../img_custom/checked.png) center center no-repeat;
     background-size: 12px;
   }
 
@@ -3537,7 +3537,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .site-footer .logo {
-    background: url(../img/logo_bot.jpg) left top no-repeat;
+    background: url(../img_custom/logo_bot.jpg) left top no-repeat;
     width: 200px;
     height: 56px;
   }
@@ -3601,7 +3601,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #f3912d !important;
   }
   .logo {
-    background-image: url(../img/logo.jpg);
+    background-image: url(../img_custom/logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     top: -12px;
