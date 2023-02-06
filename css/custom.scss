@@ -2424,7 +2424,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .credit-info__text {
-    display: none;
+    // display: none;
     position: relative;
     background: #f7f7f7;
     margin: 0 0 20px -25px;
@@ -3669,4 +3669,23 @@ input.search-form__input {
   margin-left: 99%;
   cursor: pointer;
   font-size: x-large;
+}
+
+.form__col {
+  float: left;
+  display: flex;
+  width: 100%;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.credit-info__text {
+  display: none;
+}
+.credit-info__item.active {
+  .credit-info__text {
+    display: block;
+  }
 }
