@@ -2026,13 +2026,6 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
 
-  .credit-price__unit {
-    position: absolute;
-    right: 85px;
-    top: 12px;
-    color: #888;
-  }
-
   .form__cell.cell_credit-price .form__button {
     position: absolute;
     width: 64px;
@@ -2160,10 +2153,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .credit-price__unit {
-    position: absolute;
-    right: 85px;
-    top: 12px;
-    color: #888;
+    font-size: 1.8rem !important;
+    line-height: 50px !important;
   }
 
   .form__cell.cell_credit-price .form__button {
@@ -3688,4 +3679,9 @@ input.search-form__input {
   .credit-info__text {
     display: block;
   }
+}
+
+.table td {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
 }

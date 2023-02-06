@@ -1806,12 +1806,6 @@ html {
   font-size: 2.4rem;
   text-align: center;
 }
-.basket .credit-price__unit {
-  position: absolute;
-  right: 85px;
-  top: 12px;
-  color: #888;
-}
 .basket .form__cell.cell_credit-price .form__button {
   position: absolute;
   width: 64px;
@@ -1920,10 +1914,8 @@ html {
   text-align: center;
 }
 .basket .credit-price__unit {
-  position: absolute;
-  right: 85px;
-  top: 12px;
-  color: #888;
+  font-size: 1.8rem !important;
+  line-height: 50px !important;
 }
 .basket .form__cell.cell_credit-price .form__button {
   position: absolute;
@@ -3268,4 +3260,9 @@ input.search-form__input {
 
 .credit-info__item.active .credit-info__text {
   display: block;
+}
+
+.table td {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
 }/*# sourceMappingURL=custom.css.map */

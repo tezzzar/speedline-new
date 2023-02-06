@@ -941,8 +941,15 @@
                       <div class="form__col col_2">
                         <span class="form__label">Повна вартість обраних товарів:</span>
                         <div class="form__cell cell_credit-price">
-                          <input type="text" name="sum" class="form__input" value="1275">
-                          <span class="credit-price__unit">грн.</span>
+                          <input type="text" name="sum" class="form__input" value="1275" style="
+                          text-align: center;
+                      ">
+                          <span class="credit-price__unit" style="
+                          font-size: 1.8rem;
+                          line-height: 50px;
+                          position: absolute;
+                          left: 192px;
+                      ">грн.</span>
                           <!-- <button id="sum_button" class="form__button sum_button">Ок</button> -->
                         </div>
                       </div>
@@ -985,7 +992,6 @@
               <!--***-->
               <div class="credits-result calc-fixed">
                 <table class="table table_credits">
-
                   <tbody>
                     <tr>
                       <td colspan="5" class="credit-td__title">
@@ -1005,39 +1011,16 @@
                               посиланням</a>.</li>
                           <li>Дізнайтеся свій ліміт на Покупки частинами</li>
                           <li>Купуйте частинами автомобільні товари в нашому магазині.</li>
-                          <li>
-                            <div class="credit-info">
-                              <div class="credit-info__item">
-                                <a class="credit-info__link">Детальніше >></a>
-                                <div class="credit-info__text">
-                                  <p>Розрахунок приблизний, носить інформаційний характер і побудований з розрахунку, що
-                                    клієнт здійснює транзакцію в кредит в торговельній точці.<br>
-                                    Мінімальна сума кредиту - 500 грн.<br>
-                                    Максимальна сума кредиту - 200 000 грн.<br>
-                                    Мінімальний строк кредиту - 2 міс.<br>
-                                    Максимальний строк кредиту - 3 міс.</p>
-                                </div>
-                              </div>
-                              <!-- div class="credit-info__item">
-                                                  <a class="credit-info__link">Як оформити</a>
-                                                  <div class="credit-info__text">
-                                                      <p>Розрахунок приблизний, носить інформаційний характер і побудований з розрахунку, що клієнт здійснює транзакцію в кредит в торговельній точці.<br />
-              Мінімальна сума кредиту - 500 грн.<br />
-              Максимальна сума кредиту - 200 000 грн.<br />
-              Мінімальний строк кредиту - 2 міс.<br />
-              Максимальний строк кредиту - 3 міс.</p>
-                                                  </div>
-                                              </div -->
-                            </div>
-                          </li>
                         </ul>
                       </td>
                       <td class="credit-td__term">
-                        <span class="credit__term">
-                          <span class="number_pay">3</span>
-                          <span class="unit">міс.</span>
-                        </span>
-                        <br>3 або 4 платежі
+                        <select id="credit-td__term_1" name="credit-td__term_1">
+                          <option value="2">2 платежі</option>
+                          <option value="3">3 платежі</option>
+                          <option value="4">4 платежі</option>
+                          <option value="5">5 платежів</option>
+                          <option value="6">6 платежів</option>
+                        </select>
                       </td>
                       <td class="credit-td__price"><span class="credit__price">425.00</span>
                         <br>грн/платіж*.
@@ -1046,7 +1029,34 @@
                         <input type="submit" data-bank="mono" class="button" value="подати заявку">
                       </td>
                     </tr>
-
+                    <tr>
+                      <td style="border-top: none;"></td>
+                      <td colspan="4" style="border-top: none;">
+                        <div class="credit-info">
+                          <div class="credit-info__item">
+                            <a class="credit-info__link">Детальніше</a>
+                            <div class="credit-info__text">
+                              <p>Розрахунок приблизний, носить інформаційний характер і побудований з розрахунку, що
+                                клієнт здійснює транзакцію в кредит в торговельній точці.<br>
+                                Мінімальна сума кредиту - 500 грн.<br>
+                                Максимальна сума кредиту - 200 000 грн.<br>
+                                Мінімальний строк кредиту - 2 міс.<br>
+                                Максимальний строк кредиту - 3 міс.</p>
+                            </div>
+                          </div>
+                          <!-- div class="credit-info__item">
+                                              <a class="credit-info__link">Як оформити</a>
+                                              <div class="credit-info__text">
+                                                  <p>Розрахунок приблизний, носить інформаційний характер і побудований з розрахунку, що клієнт здійснює транзакцію в кредит в торговельній точці.<br />
+          Мінімальна сума кредиту - 500 грн.<br />
+          Максимальна сума кредиту - 200 000 грн.<br />
+          Мінімальний строк кредиту - 2 міс.<br />
+          Максимальний строк кредиту - 3 міс.</p>
+                                              </div>
+                                          </div -->
+                        </div>
+                      </td>
+                    </tr>
                     <tr>
                       <td colspan="5" class="credit-td__title">
                         <strong>Сплачуйте частинами.</strong>
@@ -1069,11 +1079,13 @@
                         </ul>
                       </td>
                       <td class="credit-td__term">
-                        <span class="credit__term">
-                          <span class="number_pay">3</span>
-                          <span class="unit">міс.</span>
-                        </span>
-                        <br>3 або 4 платежі
+                        <select id="credit-td__term_2" name="credit-td__term_2">
+                          <option value="2">2 платежі</option>
+                          <option value="3">3 платежі</option>
+                          <option value="4">4 платежі</option>
+                          <option value="5">5 платежів</option>
+                          <option value="6">6 платежів</option>
+                        </select>
                       </td>
                       <td class="credit-td__price"><span class="credit__price">425.00</span>
                         <br>грн/платіж*.
@@ -1186,11 +1198,13 @@
                         </ul>
                       </td>
                       <td class="credit-td__term">
-                        <span class="credit__term">
-                          <span class="number_pay">3</span>
-                          <span class="unit">міс.</span>
-                        </span>
-                        <br>3, 6, 10.
+                        <select id="credit-td__term_3" name="credit-td__term_3">
+                          <option value="2">2 платежі</option>
+                          <option value="3">3 платежі</option>
+                          <option value="4">4 платежі</option>
+                          <option value="5">5 платежів</option>
+                          <option value="6">6 платежів</option>
+                        </select>
                       </td>
                       <td class="credit-td__price"><span class="credit__price">462.00</span>
                         <br>грн/платіж*.
