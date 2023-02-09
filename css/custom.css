@@ -263,10 +263,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__logo {
+  position: relative;
   background-image: url(../img_custom/logo.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 90px;
+  width: 250px;
+  top: -35px;
 }
 
 .logo > a {
@@ -279,6 +282,7 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   top: 0px;
   height: 60px;
+  width: 210px;
 }
 
 .article-prw a {
@@ -3201,8 +3205,11 @@ input.search-form__input {
 }
 
 .cars_select_button .button_text {
-  width: 99%;
   margin-left: 5px;
+}
+
+.cars_select_button {
+  width: 99%;
 }
 
 .hide {
@@ -3265,4 +3272,8 @@ input.search-form__input {
 .table td {
   border-top: 1px solid #ccc;
   border-bottom: none;
+}
+
+.logo img {
+  width: 200px;
 }/*# sourceMappingURL=custom.css.map */
