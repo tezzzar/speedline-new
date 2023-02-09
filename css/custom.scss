@@ -304,6 +304,7 @@ body::-webkit-scrollbar-thumb {
   top: 23px;
   height: 60px;
   width: 294px;
+  margin: 6px 0;
 }
 
 .article-prw {
@@ -323,6 +324,15 @@ body::-webkit-scrollbar-thumb {
   body,
   html {
     overflow-x: hidden;
+  }
+  .footer__logo {
+    position: relative;
+    background-image: url(../img_custom/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90px;
+    width: 250px;
+    top: 10px;
   }
 }
 
@@ -3596,11 +3606,10 @@ body::-webkit-scrollbar-thumb {
     background-color: #f3912d !important;
   }
   .logo {
-    background-image: url(../img_custom/logo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    top: -12px;
-    height: 59px;
+    background-size: contain;
+    top: 0px;
+    height: 35px;
   }
 }
 
