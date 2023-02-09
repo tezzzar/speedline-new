@@ -252,7 +252,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #e75329;
+  background-color: #b3341d;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
@@ -277,12 +277,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo {
-  background-image: url(../img_custom/logo.jpg);
+  background-image: url(../img_custom/logo.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  top: 0px;
+  background-size: contain;
+  top: 23px;
   height: 60px;
-  width: 210px;
+  width: 294px;
 }
 
 .article-prw a {
@@ -497,13 +497,6 @@ html {
   display: block;
   line-height: 56px;
 }
-.basket .logo {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../img_custom/logo.jpg);
-  width: 199px;
-  height: 56px;
-}
 .basket .logo a {
   display: block;
   line-height: 56px;
@@ -532,7 +525,7 @@ html {
   /* color of the tracking area */
 }
 .basket body::-webkit-scrollbar-thumb {
-  background-color: #e75329;
+  background-color: #b3341d;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
@@ -3157,7 +3150,7 @@ html {
 }
 
 .slideshow-banners {
-  margin: -41px 0px 0 -30px;
+  margin: 0px 0px 0 -30px;
 }
 
 .cars_select_modal .cell_checkbox.size_3,
@@ -3270,10 +3263,51 @@ input.search-form__input {
 }
 
 .table td {
-  border-top: 1px solid #ccc;
   border-bottom: none;
 }
 
 .logo img {
   width: 200px;
+}
+
+td.credit-td__title,
+td.credit-td__title:first-child {
+  background: #e75329;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.credit-td__button .form__button,
+.credit-td__button .button {
+  line-height: unset;
+}
+
+.slide__title {
+  top: 50px;
+}
+
+.banner__text {
+  top: 50px;
+}
+.banner__text :last-child {
+  top: 10px;
+}
+
+.article-prw a:hover {
+  color: #f5921d !important;
+}
+
+input[type=checkbox]:checked + .checkbox__label:before,
+input[type=checkbox]:checked + .option__label:before {
+  background: url(../img_custom/check.png) center center no-repeat;
+  background-size: cover;
+}
+
+.wrapper .catalog-filters-br a {
+  background-color: #b3341d;
+}
+
+.li-switch {
+  border-bottom: 2px solid #b3341d;
+  border-right: 2px solid #b3341d;
 }/*# sourceMappingURL=custom.css.map */
