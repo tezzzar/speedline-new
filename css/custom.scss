@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url(../img_custom/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 23px;
+  top: 20px;
   height: 60px;
   width: 294px;
   margin: 6px 0;
@@ -326,13 +326,7 @@ body::-webkit-scrollbar-thumb {
     overflow-x: hidden;
   }
   .footer__logo {
-    position: relative;
-    background-image: url(../img_custom/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 90px;
-    width: 250px;
-    top: 10px;
+    display: none;
   }
 }
 
@@ -3754,4 +3748,17 @@ input[type="checkbox"]:checked + .option__label:before {
 .li-switch {
   border-bottom: 2px solid #b3341d;
   border-right: 2px solid #b3341d;
+}
+
+.tabs__list li a {
+  background: #f9c931a6;
+}
+
+.seller__logo {
+  background-image: url(../img_custom/logo-cart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.seller__logo img {
+  opacity: 0;
 }
