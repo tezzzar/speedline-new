@@ -328,6 +328,15 @@ body::-webkit-scrollbar-thumb {
   .footer__logo {
     display: none;
   }
+  .catalog-carousel {
+    .owl-dots {
+      display: none !important;
+    }
+  }
+  .menu-ul li.li-switch-closed:hover,
+  .menu-ul li.li-switch-opened li:hover {
+    background-color: #f9ac2f !important;
+  }
 }
 
 .header-user,
@@ -3619,7 +3628,7 @@ input.search-form__input {
 }
 
 .product__buy {
-  top: -3px;
+  top: -2.5px;
 }
 
 .cars_select_button .button_text {
@@ -3742,7 +3751,18 @@ input[type="checkbox"]:checked + .option__label:before {
 }
 
 .wrapper .catalog-filters-br a {
+  padding: 1px 6px;
   background-color: #b3341d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  font-family: cursive;
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 5px;
+  border: 2px solid #e75329;
 }
 
 .li-switch {
@@ -3761,4 +3781,21 @@ input[type="checkbox"]:checked + .option__label:before {
 }
 .seller__logo img {
   opacity: 0;
+}
+
+.fav-button {
+  background-image: url(../img_custom/fav-red-ico.svg);
+}
+
+.compare-button {
+  background-image: url(../img_custom/compare-red-ico.svg);
+}
+
+.site-nav > ul > li > ul > li:hover {
+  background-color: #f2b132;
+}
+
+.cars_select_modal .cell_checkbox.size_3,
+.cars_select_modal .cell_checkbox.size_10 {
+  width: 100% !important;
 }

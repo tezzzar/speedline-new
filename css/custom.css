@@ -299,11 +299,18 @@ body::-webkit-scrollbar-thumb {
     left: 0px;
   }
   body,
-html {
+  html {
     overflow-x: hidden;
   }
   .footer__logo {
     display: none;
+  }
+  .catalog-carousel .owl-dots {
+    display: none !important;
+  }
+  .menu-ul li.li-switch-closed:hover,
+  .menu-ul li.li-switch-opened li:hover {
+    background-color: #f9ac2f !important;
   }
 }
 .header-user,
@@ -375,7 +382,7 @@ html {
   /* = Modal
   ---------------------------------------------
   --------------------------------------------- */
-  /*# sourceMappingURL=custom.css.map */
+
 }
 .basket .site-nav {
   background: #e75325;
@@ -1200,8 +1207,8 @@ html {
 }
 @media (max-width: 1100px) {
   .basket input[type=text],
-.basket textarea,
-.basket button {
+  .basket textarea,
+  .basket button {
     font-size: 1.6rem;
   }
   .basket .form {
@@ -1214,8 +1221,8 @@ html {
     margin: 0 0 20px 0;
   }
   .basket .form__input,
-.basket .form__textarea,
-.basket .form__input_cap {
+  .basket .form__textarea,
+  .basket .form__input_cap {
     font-size: 1.6rem;
     height: 46px;
   }
@@ -1232,7 +1239,7 @@ html {
     padding: 12px 12px 5px 12px;
   }
   .basket .ui-selectmenu-button span.ui-icon,
-.basket .select-link:before {
+  .basket .select-link:before {
     top: 18px;
     right: 12px;
   }
@@ -1266,7 +1273,7 @@ html {
     padding: 25px 20px 25px 20px;
   }
   .basket .form__button,
-.basket .button {
+  .basket .button {
     width: 100%;
   }
   .basket .input_day {
@@ -1712,7 +1719,7 @@ html {
     margin-left: 0px;
   }
   .basket .site-footer:before,
-.basket .site-footer:after {
+  .basket .site-footer:after {
     display: none;
   }
   .basket .site-footer .logo {
@@ -2682,7 +2689,7 @@ html {
     font-size: 1.2rem;
   }
   .basket td.order-td__price,
-.basket td.order-td__sum {
+  .basket td.order-td__sum {
     font-size: 1.5rem;
   }
   .basket td.order-td__total-name {
@@ -2695,7 +2702,7 @@ html {
     margin: 0px 35px 0px 10px;
   }
   .basket .quantity-form.math:before,
-.basket .quantity-form.math:after {
+  .basket .quantity-form.math:after {
     font-size: 1.8rem;
   }
   .basket .quantity-form.math:before {
@@ -2708,7 +2715,7 @@ html {
     right: -41px;
   }
   .basket .quantity-form__minus,
-.basket .quantity-form__plus {
+  .basket .quantity-form__plus {
     position: absolute;
     color: #888;
     width: 24px;
@@ -2832,17 +2839,13 @@ html {
 }
 .basket .remodal-overlay.remodal-is-opening,
 .basket .remodal-overlay.remodal-is-closing {
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 .basket .remodal-overlay.remodal-is-opening {
-  -webkit-animation-name: remodal-overlay-opening-keyframes;
   animation-name: remodal-overlay-opening-keyframes;
 }
 .basket .remodal-overlay.remodal-is-closing {
-  -webkit-animation-name: remodal-overlay-closing-keyframes;
   animation-name: remodal-overlay-closing-keyframes;
 }
 .basket .remodal-wrapper {
@@ -2861,17 +2864,13 @@ html {
 }
 .basket .remodal.remodal-is-opening,
 .basket .remodal.remodal-is-closing {
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 .basket .remodal.remodal-is-opening {
-  -webkit-animation-name: remodal-opening-keyframes;
   animation-name: remodal-opening-keyframes;
 }
 .basket .remodal.remodal-is-closing {
-  -webkit-animation-name: remodal-closing-keyframes;
   animation-name: remodal-closing-keyframes;
 }
 .basket .remodal,
@@ -2929,17 +2928,6 @@ html {
   padding: 0;
   border: 0;
 }
-@-webkit-keyframes remodal-opening-keyframes {
-  from {
-    transform: scale(1.05);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-    filter: blur(0);
-  }
-}
 @keyframes remodal-opening-keyframes {
   from {
     transform: scale(1.05);
@@ -2948,17 +2936,6 @@ html {
   to {
     transform: none;
     opacity: 1;
-    filter: blur(0);
-  }
-}
-@-webkit-keyframes remodal-closing-keyframes {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.95);
-    opacity: 0;
     filter: blur(0);
   }
 }
@@ -2973,28 +2950,12 @@ html {
     filter: blur(0);
   }
 }
-@-webkit-keyframes remodal-overlay-opening-keyframes {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes remodal-overlay-opening-keyframes {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes remodal-overlay-closing-keyframes {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 @keyframes remodal-overlay-closing-keyframes {
@@ -3197,7 +3158,7 @@ input.search-form__input {
 }
 
 .product__buy {
-  top: -3px;
+  top: -2.5px;
 }
 
 .cars_select_button .button_text {
@@ -3307,7 +3268,18 @@ input[type=checkbox]:checked + .option__label:before {
 }
 
 .wrapper .catalog-filters-br a {
+  padding: 1px 6px;
   background-color: #b3341d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  font-family: cursive;
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 5px;
+  border: 2px solid #e75329;
 }
 
 .li-switch {
@@ -3327,4 +3299,21 @@ input[type=checkbox]:checked + .option__label:before {
 
 .seller__logo img {
   opacity: 0;
+}
+
+.fav-button {
+  background-image: url(../img_custom/fav-red-ico.svg);
+}
+
+.compare-button {
+  background-image: url(../img_custom/compare-red-ico.svg);
+}
+
+.site-nav > ul > li > ul > li:hover {
+  background-color: #f2b132;
+}
+
+.cars_select_modal .cell_checkbox.size_3,
+.cars_select_modal .cell_checkbox.size_10 {
+  width: 100% !important;
 }/*# sourceMappingURL=custom.css.map */

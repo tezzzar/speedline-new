@@ -782,8 +782,8 @@ input[type=text].slider__input {
 
 @media (max-width: 1100px) {
   input[type=text],
-textarea,
-button {
+  textarea,
+  button {
     font-size: 1.6rem;
   }
   .form {
@@ -796,8 +796,8 @@ button {
     margin: 0 0 20px 0;
   }
   .form__input,
-.form__textarea,
-.form__input_cap {
+  .form__textarea,
+  .form__input_cap {
     font-size: 1.6rem;
     height: 46px;
   }
@@ -814,7 +814,7 @@ button {
     padding: 12px 12px 5px 12px;
   }
   .ui-selectmenu-button span.ui-icon,
-.select-link:before {
+  .select-link:before {
     top: 18px;
     right: 12px;
   }
@@ -848,7 +848,7 @@ button {
     padding: 25px 20px 25px 20px;
   }
   .form__button,
-.button {
+  .button {
     width: 100%;
   }
   .input_day {
@@ -1351,7 +1351,7 @@ button {
     margin-left: 0px;
   }
   .site-footer:before,
-.site-footer:after {
+  .site-footer:after {
     display: none;
   }
   .site-footer .logo {
@@ -2477,7 +2477,7 @@ input.quantity-form__input {
     font-size: 1.2rem;
   }
   td.order-td__price,
-td.order-td__sum {
+  td.order-td__sum {
     font-size: 1.5rem;
   }
   td.order-td__total-name {
@@ -2490,7 +2490,7 @@ td.order-td__sum {
     margin: 0px 35px 0px 10px;
   }
   .quantity-form.math:before,
-.quantity-form.math:after {
+  .quantity-form.math:after {
     font-size: 1.8rem;
   }
   .quantity-form.math:before {
@@ -2503,7 +2503,7 @@ td.order-td__sum {
     right: -41px;
   }
   .quantity-form__minus,
-.quantity-form__plus {
+  .quantity-form__plus {
     position: absolute;
     color: #888;
     width: 24px;
@@ -2645,19 +2645,15 @@ html.remodal-is-locked {
 
 .remodal-overlay.remodal-is-opening,
 .remodal-overlay.remodal-is-closing {
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .remodal-overlay.remodal-is-opening {
-  -webkit-animation-name: remodal-overlay-opening-keyframes;
   animation-name: remodal-overlay-opening-keyframes;
 }
 
 .remodal-overlay.remodal-is-closing {
-  -webkit-animation-name: remodal-overlay-closing-keyframes;
   animation-name: remodal-overlay-closing-keyframes;
 }
 
@@ -2679,19 +2675,15 @@ html.remodal-is-locked {
 
 .remodal.remodal-is-opening,
 .remodal.remodal-is-closing {
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .remodal.remodal-is-opening {
-  -webkit-animation-name: remodal-opening-keyframes;
   animation-name: remodal-opening-keyframes;
 }
 
 .remodal.remodal-is-closing {
-  -webkit-animation-name: remodal-closing-keyframes;
   animation-name: remodal-closing-keyframes;
 }
 
@@ -2755,18 +2747,6 @@ html.remodal-is-locked {
   padding: 0;
   border: 0;
 }
-
-@-webkit-keyframes remodal-opening-keyframes {
-  from {
-    transform: scale(1.05);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-    filter: blur(0);
-  }
-}
 @keyframes remodal-opening-keyframes {
   from {
     transform: scale(1.05);
@@ -2775,17 +2755,6 @@ html.remodal-is-locked {
   to {
     transform: none;
     opacity: 1;
-    filter: blur(0);
-  }
-}
-@-webkit-keyframes remodal-closing-keyframes {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.95);
-    opacity: 0;
     filter: blur(0);
   }
 }
@@ -2800,28 +2769,12 @@ html.remodal-is-locked {
     filter: blur(0);
   }
 }
-@-webkit-keyframes remodal-overlay-opening-keyframes {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes remodal-overlay-opening-keyframes {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes remodal-overlay-closing-keyframes {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 @keyframes remodal-overlay-closing-keyframes {
