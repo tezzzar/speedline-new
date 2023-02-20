@@ -3329,4 +3329,17 @@ input[type=checkbox]:checked + .option__label:before {
 
 .cars_select_button {
   max-width: 1090px;
+}
+
+.cars_select_modal .checkbox-button {
+  height: 30px !important;
+  padding: 0px 15px !important;
+}
+
+.cars_select_modal .selection-step .checkbox-button__text {
+  text-transform: none;
+}
+
+.cars_select_modal .selection-step .checkbox-button {
+  font: caption;
 }/*# sourceMappingURL=custom.css.map */
