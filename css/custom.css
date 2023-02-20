@@ -54,7 +54,7 @@ input.search-form__input {
 } */
 .car_select_items,
 .cars_select_button .button_text {
-  background: #f28f20 !important;
+  background: #e75329 !important;
 }
 
 .catalog-item__buy,
@@ -3242,6 +3242,10 @@ td.credit-td__title:first-child {
   line-height: unset;
 }
 
+.banner__text {
+  top: 20px;
+  padding-right: 20px;
+}
 .banner__text :last-child {
   top: 10px;
 }
@@ -3333,7 +3337,7 @@ input[type=checkbox]:checked + .option__label:before {
 
 .cars_select_modal .checkbox-button {
   height: 30px !important;
-  padding: 0px 15px !important;
+  padding: 0px 57px !important;
 }
 
 .cars_select_modal .selection-step .checkbox-button__text {
@@ -3342,4 +3346,31 @@ input[type=checkbox]:checked + .option__label:before {
 
 .cars_select_modal .selection-step .checkbox-button {
   font: caption;
+}
+
+.car_select_items {
+  max-width: 1091px;
+  padding: 9px;
+  min-height: 40px;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.catalog-left label {
+  display: none;
+}
+
+#category_car_selector {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  margin-top: 10px;
+  margin-left: 15px;
+  max-width: 1091px;
+}
+
+.wrapper .catalog-filters-br a {
+  background-color: #e75329;
+  font-family: inherit;
 }/*# sourceMappingURL=custom.css.map */
