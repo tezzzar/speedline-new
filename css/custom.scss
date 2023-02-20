@@ -3583,9 +3583,9 @@ body::-webkit-scrollbar-thumb {
   } /*# sourceMappingURL=custom.css.map */
 }
 
-.slideshow-banners {
-  margin: 0px 0px 0 -30px;
-}
+// .slideshow-banners {
+//   margin: 0px 0px 0 -30px;
+// }
 
 .cars_select_modal .cell_checkbox.size_3,
 .cars_select_modal .cell_checkbox.size_10 {
@@ -3810,4 +3810,8 @@ input[type="checkbox"]:checked + .option__label:before {
 
 .slideshow-banners .owl-item {
   max-width: 1390px;
+}
+
+.content__slideshow {
+  padding-top: 3px;
 }

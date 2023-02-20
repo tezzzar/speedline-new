@@ -3114,10 +3114,6 @@ body::-webkit-scrollbar-thumb {
   height: 19px;
 }
 
-.slideshow-banners {
-  margin: 0px 0px 0 -30px;
-}
-
 .cars_select_modal .cell_checkbox.size_3,
 .cars_select_modal .cell_checkbox.size_10 {
   width: 100%;
@@ -3321,4 +3317,8 @@ input[type=checkbox]:checked + .option__label:before {
 
 .slideshow-banners .owl-item {
   max-width: 1390px;
+}
+
+.content__slideshow {
+  padding-top: 3px;
 }/*# sourceMappingURL=custom.css.map */
