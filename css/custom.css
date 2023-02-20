@@ -3321,4 +3321,8 @@ input[type=checkbox]:checked + .option__label:before {
 
 .content__slideshow {
   padding-top: 3px;
+}
+
+.catalog-section:last-child {
+  margin-top: 50px;
 }/*# sourceMappingURL=custom.css.map */
