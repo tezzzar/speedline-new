@@ -3246,13 +3246,6 @@ td.credit-td__title:first-child {
   line-height: unset;
 }
 
-.slide__title {
-  top: 50px;
-}
-
-.banner__text {
-  top: 50px;
-}
 .banner__text :last-child {
   top: 10px;
 }
@@ -3316,4 +3309,8 @@ input[type=checkbox]:checked + .option__label:before {
 .cars_select_modal .cell_checkbox.size_3,
 .cars_select_modal .cell_checkbox.size_10 {
   width: 100% !important;
+}
+
+.slideshow .owl-dot {
+  top: 10px;
 }/*# sourceMappingURL=custom.css.map */
