@@ -3325,4 +3325,8 @@ input[type=checkbox]:checked + .option__label:before {
 
 .catalog-section:last-child {
   margin-top: 50px;
+}
+
+.cars_select_button {
+  max-width: 1090px;
 }/*# sourceMappingURL=custom.css.map */
