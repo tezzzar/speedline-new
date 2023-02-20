@@ -3313,4 +3313,12 @@ input[type=checkbox]:checked + .option__label:before {
 
 .slideshow .owl-dot {
   top: 10px;
+}
+
+.section-title {
+  margin: 55px 0 15px 0;
+}
+
+.slideshow-banners .owl-item {
+  max-width: 1390px;
 }/*# sourceMappingURL=custom.css.map */
