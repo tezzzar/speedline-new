@@ -3866,3 +3866,19 @@ input[type="checkbox"]:checked + .option__label:before {
   background-color: #e75329;
   font-family: inherit;
 }
+
+.selection-step__header,
+.order-step__header,
+.step__header,
+.section__header {
+  background-color: #e75329 !important;
+  :hover {
+    background-color: #f9b330 !important;
+  }
+}
+
+.selection-steps {
+  .active {
+    background-color: #f2902d !important;
+  }
+}
