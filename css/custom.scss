@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -228,8 +228,8 @@ input.search-form__input {
 
 #slide_window .callback_close {
   position: absolute !important;
-  top: -37px !important;
-  right: 3px !important;
+  top: -41px !important;
+  right: 2px !important;
   width: 30px !important;
   height: 30px !important;
   bottom: 0;
@@ -3627,10 +3627,6 @@ input.search-form__input {
   padding: 0px 45px 0px 15px;
 }
 
-.product__buy {
-  top: -2.5px;
-}
-
 .cars_select_button .button_text {
   // width: 99%;
   margin-left: 5px;
@@ -3785,10 +3781,12 @@ input[type="checkbox"]:checked + .option__label:before {
 }
 
 .fav-button {
+  display: none;
   background-image: url(../img_custom/fav-red-ico.svg);
 }
 
 .compare-button {
+  display: none;
   background-image: url(../img_custom/compare-red-ico.svg);
 }
 
@@ -3880,5 +3878,62 @@ input[type="checkbox"]:checked + .option__label:before {
 .selection-steps {
   .active {
     background-color: #f2902d !important;
+  }
+}
+
+.catalog-carousel .owl-dots {
+  position: absolute;
+  top: -55px;
+}
+
+.catalog-carousel .owl-nav {
+  top: -9px;
+}
+
+.product__buttons {
+  span {
+    font-weight: bolder;
+  }
+}
+
+.product__buy {
+  line-height: 50px;
+  font-size: 1.6rem;
+  top: -0.5999999999999996px;
+}
+
+.site-nav > ul > li > a {
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .product__main .product__buy {
+    top: -1.7px;
+    background-color: #e75329;
+    width: 47.5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .credit-button {
+    width: 47.5%;
+  }
+}
+
+.seller__title {
+  a {
+    color: #e75329;
+  }
+}
+
+.product__gallery {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1180px) {
+  .product__main .product__buy {
+    top: -1.4px;
+    width: 33%;
+    background-color: #e75329;
   }
 }
