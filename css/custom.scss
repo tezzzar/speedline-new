@@ -3930,10 +3930,29 @@ input[type="checkbox"]:checked + .option__label:before {
   margin-bottom: 0;
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 769px) and (max-width: 1180px) {
   .product__main .product__buy {
     top: -1.4px;
     width: 33%;
     background-color: #e75329;
+  }
+}
+
+@media (max-width: 1480px) {
+  .product__main .product__buy {
+    background-color: #e75329;
+  }
+}
+
+@media (max-width: 460px) {
+  .slideshow-banners {
+    margin: -10px -10px 0px -10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .site-content {
+    padding: 15px 7px 25px 10px;
+    padding-top: 10px;
   }
 }
