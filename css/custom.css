@@ -3371,9 +3371,9 @@ input[type=checkbox]:checked + .option__label:before {
 .section__header {
   background-color: #e75329 !important;
 }
-.selection-step__header :hover,
-.step__header :hover,
-.section__header :hover {
+.selection-step__header .selection-step__header :hover,
+.step__header .selection-step__header :hover,
+.section__header .selection-step__header :hover {
   background-color: #f9b330 !important;
 }
 
@@ -3477,4 +3477,7 @@ input[type=checkbox]:checked + .option__label:before {
   .owl-dot.active {
     top: 6px;
   }
+}
+.cars_select_modal .selection-step .checkbox-button__text {
+  padding-left: 55px;
 }/*# sourceMappingURL=custom.css.map */

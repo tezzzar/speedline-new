@@ -3862,15 +3862,11 @@ input[type="checkbox"]:checked + .option__label:before {
   max-width: 1091px;
 }
 
-.wrapper .catalog-filters-br a {
-}
-
 .selection-step__header,
-// .order-step__header,
 .step__header,
 .section__header {
   background-color: #e75329 !important;
-  :hover {
+  .selection-step__header :hover {
     background-color: #f9b330 !important;
   }
 }
@@ -3990,4 +3986,8 @@ input[type="checkbox"]:checked + .option__label:before {
   .owl-dot.active {
     top: 6px;
   }
+}
+
+.cars_select_modal .selection-step .checkbox-button__text {
+  padding-left: 55px;
 }
