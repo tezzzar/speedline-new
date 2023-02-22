@@ -3942,6 +3942,18 @@ input[type="checkbox"]:checked + .option__label:before {
     left: 9px;
     top: 8px;
   }
+  input.search-form__input {
+    right: -114px;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    margin-bottom: unset;
+  }
+  .catalog-carousel .owl-nav {
+    top: 0px;
+  }
+  .section-title:last-child {
+    margin: 28px 0 15px 0;
+  }
 }
 
 @media (max-width: 1480px) {
@@ -3976,6 +3988,15 @@ input[type="checkbox"]:checked + .option__label:before {
     font-size: 1.6rem;
     padding: 0px 45px 0px 8px;
   }
+  input.search-form__input {
+    right: -115px;
+  }
+  .section-title {
+    margin: -38px 0 15px 0;
+  }
+  .catalog-carousel {
+    padding: 38px 0 0 0;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -3990,4 +4011,20 @@ input[type="checkbox"]:checked + .option__label:before {
 
 .cars_select_modal .selection-step .checkbox-button__text {
   padding-left: 55px;
+}
+
+@media (max-width: 1280px) {
+  .search-form {
+    right: 121px !important;
+  }
+  input.search-form__button,
+  button.search-form__button {
+    right: -115px;
+  }
+  .slideshow-banners {
+    margin: -14px 0 -25px 0;
+  }
+  .catalog-carousel .owl-nav {
+    top: -7px;
+  }
 }
