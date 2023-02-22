@@ -4027,4 +4027,14 @@ input[type="checkbox"]:checked + .option__label:before {
   .catalog-carousel .owl-nav {
     top: -7px;
   }
+  .catalog-filters {
+    max-width: 1140px;
+    padding: 20px 10px;
+  }
+  .mCSB_scrollTools .mCSB_draggerRail {
+    display: none;
+  }
+  .li-switch-block {
+    right: -5px;
+  }
 }
